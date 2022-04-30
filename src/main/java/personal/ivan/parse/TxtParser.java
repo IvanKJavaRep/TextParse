@@ -1,11 +1,11 @@
 package personal.ivan.parse;
 
-import java.util.stream.Stream;
+import com.google.gson.Gson;
 
 public class TxtParser implements IParse{
 
     @Override
-    public void parse(Stream<String> stream) {
-
+    public void parse(String s) {
+        Gson g = new Gson();
     }
 }

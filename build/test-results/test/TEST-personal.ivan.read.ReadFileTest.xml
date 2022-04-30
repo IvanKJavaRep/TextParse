@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="personal.ivan.read.ReadFileTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-29T14:36:35" hostname="OMSKNTB0608" time="0.015">
+  <properties/>
+  <testcase name="test()" classname="personal.ivan.read.ReadFileTest" time="0.015"/>
+  <system-out><![CDATA[dddd
+ffff
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

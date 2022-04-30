@@ -1,8 +1,10 @@
 package personal.ivan.read;
 
 
+import java.io.FileNotFoundException;
+
 interface IReadable {
-    public void Parse(String filename);
+    public void Read(String filename) throws FileNotFoundException;
 
 }
 
