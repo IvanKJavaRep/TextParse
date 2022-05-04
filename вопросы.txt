@@ -9,3 +9,5 @@
 
 - яблоко
 - банан
+
+https://github.com/IvanKJavaRep/TextParse - репозиторий с проектом.
