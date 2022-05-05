@@ -26,6 +26,7 @@ public class TxtParser implements IParse {
                     fw.write(jsonList);
                     fw.write("\n");
                 }
+                fw.write("\n");
             } catch (Exception e) {
 
             }

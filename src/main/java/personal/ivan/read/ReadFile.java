@@ -1,7 +1,6 @@
 package personal.ivan.read;
 
 import personal.ivan.parse.TxtParser;
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -18,7 +17,6 @@ public class ReadFile implements IReadable {
             TxtParser parser = new TxtParser();
             while((line=br.readLine())!=null)
             {
-                //System.out.println(line.length());
                 parser.parse(line);
             }
             parser.parse("");
