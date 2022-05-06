@@ -1,6 +1,5 @@
 package personal.ivan.parse;
 
-import com.google.gson.Gson;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -8,12 +7,13 @@ import org.jsoup.select.Elements;
 import personal.ivan.domain.Paragraph;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 public class HtmlParser implements IParse{
     @Override
     public personal.ivan.domain.Document parse(String filename) {
-        Gson g = new Gson();
+        //Gson g = new Gson();
         File in = new File(filename);
         try {
             Document doc = Jsoup.parse(in, null);
@@ -37,5 +37,10 @@ public class HtmlParser implements IParse{
     @Override
     public void parseByString(String s) {
 
+    }
+
+    @Override
+    public personal.ivan.domain.Document parse(FileInputStream fstream) {
+        return null;
     }
 }

@@ -1,10 +1,11 @@
 package personal.ivan.read;
 
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 interface IReadable {
-    public void Read(String filename) throws FileNotFoundException;
+    public FileInputStream Read(String filename) throws FileNotFoundException;
 
 }
 

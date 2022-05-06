@@ -2,8 +2,8 @@ package personal.ivan.process;
 
 import personal.ivan.domain.Document;
 
-import java.util.function.Consumer;
+import java.util.function.Function;
 
 public interface IProcess {
-    void process(Document d, Consumer<Document> method);
+    void process(Document d, Function<Document,String> method);
 }

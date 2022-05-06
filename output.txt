@@ -1,20 +1,24 @@
-{"name":"Paragraph","content":"dddd, gggg.\n"}
-
-{"name":"Paragraph","content":"ddddd!\n1. яблоко\n2. банан\n3. груша\n"}
-{"name":"List","lst":[" яблоко\n"," банан\n"," груша\n"]}
-
-{"name":"Paragraph","content":"fffff\nssssssy.\n"}
-
-{"name":"Paragraph","content":"1. a\n2. b\n3. c\n"}
-{"name":"List","lst":[" a\n"," b\n"," c\n"]}
-
-{"name":"Paragraph","content":"dddd, gggg.\n"}
-
-{"name":"Paragraph","content":"ddddd!\n1. яблоко\n2. банан\n3. груша\n"}
-{"name":"List","lst":[" яблоко\n"," банан\n"," груша\n"]}
-
-{"name":"Paragraph","content":"fffff\nssssssy.\n"}
-
-{"name":"Paragraph","content":"1. a\n2. b\n3. c\n"}
-{"name":"List","lst":[" a\n"," b\n"," c\n"]}
-
+{
+  "content" : "Document",
+  "elements" : [ {
+    "content" : "dddd, gggg.\n"
+  }, {
+    "content" : "List",
+    "lst" : [ ]
+  }, {
+    "content" : "ddddd!\n1. яблоко\n2. банан\n3. груша\n"
+  }, {
+    "content" : "List",
+    "lst" : [ " яблоко\n", " банан\n", " груша\n" ]
+  }, {
+    "content" : "fffff\nssssssy.\n"
+  }, {
+    "content" : "List",
+    "lst" : [ ]
+  }, {
+    "content" : "1. a\n2. b\n3. c\n"
+  }, {
+    "content" : "List",
+    "lst" : [ " a\n", " b\n", " c\n" ]
+  } ]
+}
