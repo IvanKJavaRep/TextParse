@@ -3,7 +3,7 @@ package personal.ivan.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Paragraph extends Text{
+public class Paragraph extends Element {
     String name = "Paragraph";
     public Paragraph(String text) {
         super(text);
@@ -20,7 +20,7 @@ public class Paragraph extends Text{
             lst1.add(l);
         }
         lst1.remove(0);
-        TxtList lst = new TxtList(lst1);
+        TxtList lst = new TxtList(lst1, "List");
         return lst;
     }
 }

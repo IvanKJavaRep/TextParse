@@ -1,9 +1,9 @@
 package personal.ivan.domain;
 
-public abstract class Text {
+public abstract class Element {
     public String content;
     public abstract void printContent();
-    public Text(String text)
+    public Element(String text)
     {
         content =text;
     }

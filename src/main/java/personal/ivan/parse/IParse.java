@@ -1,5 +1,8 @@
 package personal.ivan.parse;
 
+import personal.ivan.domain.Document;
+
 interface IParse {
-    public void parse(String s);
+    public Document parse(String filename);
+    void parseByString(String s);
 }
