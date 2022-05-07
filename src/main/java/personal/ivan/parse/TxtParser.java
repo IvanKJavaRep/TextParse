@@ -24,7 +24,7 @@ public class TxtParser implements IParse {
             Paragraph p = new Paragraph(current);
             TxtList txtL = p.searchForList();
             docu.elements.add(p);
-            System.out.println(docu.elements.size());
+            //System.out.println(docu.elements.size());
             docu.elements.add(txtL);
             current = "";
         } else if (s.length() != 0) {

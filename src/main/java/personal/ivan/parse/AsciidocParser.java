@@ -1,25 +1,32 @@
 package personal.ivan.parse;
 
 import org.asciidoctor.Asciidoctor;
+import org.asciidoctor.OptionsBuilder;
+import org.asciidoctor.SafeMode;
 import personal.ivan.domain.Document;
 
+import java.io.File;
 import java.io.FileInputStream;
-
-import static org.asciidoctor.Asciidoctor.Factory.create;
 
 public class AsciidocParser implements IParse {
 
     @Override
     public Document parse(String s) {
-        Asciidoctor adoc = create();
-        //adoc.convertFile("")
-        Document d = new Document("Document");
-        return d;
+        try {
+            Asciidoctor adoc = Asciidoctor.Factory.create();
+            adoc.convertFile(new File("article.adoc"),
+                    OptionsBuilder.options().toFile(new File("outputAsci.html"))
+                            .safe(SafeMode.UNSAFE));
+            Document d = new Document("Document");
+            return d;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return null;
     }
 
     @Override
     public void parseByString(String s) {
-
     }
 
     @Override

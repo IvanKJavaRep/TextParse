@@ -13,7 +13,6 @@ import java.io.IOException;
 public class HtmlParser implements IParse{
     @Override
     public personal.ivan.domain.Document parse(String filename) {
-        //Gson g = new Gson();
         File in = new File(filename);
         try {
             Document doc = Jsoup.parse(in, null);
@@ -24,8 +23,7 @@ public class HtmlParser implements IParse{
                 String ss = p.text();
                 System.out.println(ss);
                 par = new Paragraph(ss);
-                //System.out.println(par.content);
-                docu.elements.add((personal.ivan.domain.Element) par);
+                docu.elements.add(par);
             }
             return docu;
         } catch (IOException e) {
