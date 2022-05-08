@@ -1,26 +1,34 @@
 package personal.ivan.parse;
 
-import org.asciidoctor.Asciidoctor;
-import org.asciidoctor.OptionsBuilder;
-import org.asciidoctor.SafeMode;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import personal.ivan.domain.Document;
+import personal.ivan.domain.Paragraph;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 
 public class AsciidocParser implements IParse {
 
     @Override
-    public Document parse(String s) {
+    public Document parse(String filename) {
+        File in = new File(filename);
         try {
-            Asciidoctor adoc = Asciidoctor.Factory.create();
-            adoc.convertFile(new File("article.adoc"),
-                    OptionsBuilder.options().toFile(new File("outputAsci.html"))
-                            .safe(SafeMode.UNSAFE));
-            Document d = new Document("Document");
-            return d;
-        } catch (Exception e) {
-            System.out.println(e);
+            org.jsoup.nodes.Document doc = Jsoup.parse(in, null);
+            Elements paragraphs = doc.select("p");
+            Paragraph par;
+            personal.ivan.domain.Document docu = new personal.ivan.domain.Document("Document");
+            for(Element p : paragraphs) {
+                String ss = p.text();
+                System.out.println(ss);
+                par = new Paragraph(ss);
+                docu.elements.add(par);
+            }
+            return docu;
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return null;
     }
