@@ -28,11 +28,13 @@ public class ProcessDocument implements IProcess{
     public static String processToJson(Document d){
         ObjectMapper mapper = new ObjectMapper();
         try {
+            /*if(d.elements.get(1) instanceof Paragraph)
+            {
+                System.out.println("###########");
+            }*/
             String jsonresult = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(d);
-            //System.out.println(jsonresult);
             return jsonresult;
         } catch (JsonProcessingException e) {
-            //e.printStackTrace();
             System.out.println(e);
         }
         return null;

@@ -12,6 +12,7 @@ import java.io.IOException;
 
 public class AsciidocParser implements IParse {
 
+
     @Override
     public Document parse(String filename) {
         File in = new File(filename);

@@ -1,6 +1,150 @@
 {
   "content" : "Document",
   "elements" : [ {
-    "content" : "The freeCodeCamp Contribution Page shows you how and where you can contribute to freeCodeCamp's community and growth."
+    "content" : "Интерфейс взаимодействия Системы обработки обращений СТП Оператора (API BPM) предназначен для интеграции Систем (ServiceDesk, товарно-учетные системы и пр.) Участника с системой обработки обращений Оператора."
+  }, {
+    "content" : "С помощью API BPM можно:"
+  }, {
+    "content" : "list",
+    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@603e292a", "org.asciidoctor.jruby.ast.impl.ListItemImpl@7e767655", "org.asciidoctor.jruby.ast.impl.ListItemImpl@2faa03e2", "org.asciidoctor.jruby.ast.impl.ListItemImpl@624f7d96" ]
+  }, {
+    "content" : "Время доступности API BPM 24 часа, 7 дней в неделю с перерывами на техническое обслуживание."
+  }, {
+    "content" : "По вопросам работы API BPM необходимо обращаться в СТП Оператора по телефону 8-800-222-15-23 или по электронной почте <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>."
+  }, {
+    "content" : "Доступ к API BPM предоставляется Участникам, зарегистрированным на Портале технической поддержки - <a href=\"https://support.crpt.ru\">support.crpt.ru</a>. Тестовый стенд доступен по адресу <a href=\"https://int.support.crpt.ru/\">int.support.crpt.ru</a>."
+  }, {
+    "content" : "Для регистрации на Портале технической поддержки необходимо создать обращение в СТП Оператора на электронный почтовый адрес: <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>. В обращении необходимо указать:"
+  }, {
+    "content" : "list",
+    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@3ea06b62", "org.asciidoctor.jruby.ast.impl.ListItemImpl@41eaca47", "org.asciidoctor.jruby.ast.impl.ListItemImpl@5850bc21" ]
+  }, {
+    "content" : "list",
+    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@60bd6db8", "org.asciidoctor.jruby.ast.impl.ListItemImpl@5d7bf1b6", "org.asciidoctor.jruby.ast.impl.ListItemImpl@4a54a0ac", "org.asciidoctor.jruby.ast.impl.ListItemImpl@17b8ac73" ]
+  }, {
+    "content" : "Изменения в API BPM публикуются на сайте <a href=\"https://честныйзнак.рф/\">честныйзнак.рф</a>, а также в информационной рассылке не позднее двух недель до внесения изменений."
+  }, {
+    "content" : "Узнать об изменениях и ознакомиться с актуальной версией описания методов API BPM можно на сайте <a href=\"https://честныйзнак.рф/\">честныйзнак.рф</a>."
+  }, {
+    "content" : "Метод используется для авторизации на API и получения авторизующей cookie. После получения cookie её необходимо добавлять в headers каждого запроса."
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/ServiceModel/AuthService.svc/Login"
+  }, {
+    "content" : "<strong>Метод:</strong> POST"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры запроса:</strong>"
+  }, {
+    "content" : "<strong>Заголовки ответа:</strong>"
+  }, {
+    "content" : "Cookie BPMLOADER, .ASPXAUTH, BPMCSRF нужно добавлять в headers запросов."
+  }, {
+    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "Метод возвращает следующую информацию по обращению:"
+  }, {
+    "content" : "list",
+    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@23200436", "org.asciidoctor.jruby.ast.impl.ListItemImpl@21dda498", "org.asciidoctor.jruby.ast.impl.ListItemImpl@4d03f7e", "org.asciidoctor.jruby.ast.impl.ListItemImpl@3aedf9e5", "org.asciidoctor.jruby.ast.impl.ListItemImpl@19cf4b3a", "org.asciidoctor.jruby.ast.impl.ListItemImpl@55fad5ff" ]
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case/{номер обращения}"
+  }, {
+    "content" : "<strong>Метод:</strong> GET"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры ответа:</strong>"
+  }, {
+    "content" : "Метод возвращает номер созданного обращения."
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case"
+  }, {
+    "content" : "<strong>Метод:</strong> POST"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры ответа:</strong>"
+  }, {
+    "content" : "Метод предназначен для добавления вложения в обращение (скриншоты, файлы и т.д.)."
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/file"
+  }, {
+    "content" : "<strong>Метод:</strong> POST"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры ответа:</strong>"
+  }, {
+    "content" : "Метод позволяет добавить новый комментарий к обращению от оператора СТП."
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/message"
+  }, {
+    "content" : "<strong>Метод:</strong> POST"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры ответа:</strong>"
+  }, {
+    "content" : "Метод позволяет вернуть обращение в работу или закрыть его."
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/update_case"
+  }, {
+    "content" : "<strong>Метод:</strong> POST"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры ответа:</strong>"
+  }, {
+    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/cases"
+  }, {
+    "content" : "<strong>Метод:</strong> POST"
+  }, {
+    "content" : "<strong>Пример строки запроса:</strong>"
+  }, {
+    "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "<strong>Параметры запроса:</strong>"
+  }, {
+    "content" : "Примечание: в запросе должен быть обязательно заполнен один из параметров."
+  }, {
+    "content" : "<strong>Пример ответа:</strong>"
+  }, {
+    "content" : "<strong>Параметры ответа:</strong>"
   } ]
 }

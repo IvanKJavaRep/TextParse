@@ -5,11 +5,8 @@ import personal.ivan.domain.Document;
 import personal.ivan.process.ProcessDocument;
 import personal.ivan.read.AsciidocREadFile;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
 public class AsciiDocConvertTest {
-    @Test void test() throws FileNotFoundException {
+    /*@Test void test() throws FileNotFoundException {
         // объект для чтения файла и преобразования в html
         AsciidocREadFile aread = new AsciidocREadFile();
         FileInputStream fs = aread.Read("article.adoc");
@@ -19,5 +16,12 @@ public class AsciiDocConvertTest {
         // объект для сериализации в json
         ProcessDocument pd = new ProcessDocument();
         pd.process(d, ProcessDocument::processToJson);
+    }*/
+    @Test void test1()
+    {
+        AsciidocREadFile reader = new AsciidocREadFile();
+        Document d = reader.readTreeAsciidoc();
+        ProcessDocument pd = new ProcessDocument();
+        pd.process(d,ProcessDocument::processToJson);
     }
 }
