@@ -1,60 +1,6 @@
 {
   "content" : "Document",
   "elements" : [ {
-    "content" : "This is the optional preamble (an untitled section body). Useful for writing simple sectionless documents consisting only of a preamble."
-  }, {
-    "content" : "The optional abstract (one or more paragraphs) goes here."
-  }, {
-    "content" : "This document is an AsciiDoc article skeleton containing briefly annotated element placeholders plus a couple of example index entries and footnotes."
-  }, {
-    "content" : "Article sections start at level 1 and can be nested up to four levels deep. [1]"
-  }, {
-    "content" : "And now for something completely different: monkeys, lions and tigers (Bengal and Siberian) using the alternative syntax index entries. Note that multi-entry terms generate separate index entries."
-  }, {
-    "content" : "Here are a couple of image examples: an example inline image followed by block images:"
-  }, {
-    "content" : "Followed by an example table:"
-  }, {
-    "content" : "-a USER GROUP"
-  }, {
-    "content" : "Add USER to GROUP."
-  }, {
-    "content" : "-R GROUP"
-  }, {
-    "content" : "Disables access to GROUP."
-  }, {
-    "content" : "Lorum ipum…"
-  }, {
-    "content" : "Sub-section at level 2."
-  }, {
-    "content" : "Sub-section at level 3."
-  }, {
-    "content" : "Sub-section at level 4."
-  }, {
-    "content" : "This is the maximum sub-section depth supported by the distributed AsciiDoc configuration. [2]"
-  }, {
-    "content" : "Article sections are at level 1 and can contain sub-sections nested up to four deep."
-  }, {
-    "content" : "An example link to anchor at start of [the-first-section] and the first sub-section."
-  }, {
-    "content" : "An example link to a bibliography entry [taoup]."
-  }, {
-    "content" : "A link to a document in a relative directory."
-  }, {
-    "content" : "AsciiDoc article appendices are just just article sections with specialsection titles."
-  }, {
-    "content" : "Appendix sub-section at level 2."
-  }, {
-    "content" : "The bibliography list is a style of AsciiDoc bulleted list."
-  }, {
-    "content" : "[taoup] Eric Steven Raymond. The Art of Unix Programming. Addison-Wesley. ISBN 0-13-142901-9."
-  }, {
-    "content" : "[walsh-muellner] Norman Walsh & Leonard Muellner. DocBook - The Definitive Guide. O’Reilly & Associates. 1999. ISBN 1-56592-580-7."
-  }, {
-    "content" : "Glossaries are optional. Glossaries entries are an example of a style of AsciiDoc labeled lists."
-  }, {
-    "content" : "The corresponding (indented) definition."
-  }, {
-    "content" : "The corresponding (indented) definition."
+    "content" : "The freeCodeCamp Contribution Page shows you how and where you can contribute to freeCodeCamp's community and growth."
   } ]
 }
