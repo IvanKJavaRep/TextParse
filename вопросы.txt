@@ -1,0 +1,15 @@
+1. Пытаюсь пройтись по списку блоков, но не все списки он видит. Некоторые остаются пустыми.
+
+else if(s.equals("ulist"))
+            {
+                ArrayList<String> l1 = new ArrayList<>();
+                for (var n:node.getBlocks()
+                     ) {
+                    l1.add(n.getContent().toString());
+                }
+                TxtList l = new TxtList(l1,"list");
+                doc.elements.add(l);
+            }
+такой код 1 раз из 4 выдал список. В исходно мфайле 4 ulist, но мой код находит их все, но не может поэлементно преобразовать 
+в мою структуру TxtList. 
+2. Как строить json? Просто все по списку сериализовать?

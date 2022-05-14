@@ -6,7 +6,7 @@
     "content" : "С помощью API BPM можно:"
   }, {
     "content" : "list",
-    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@603e292a", "org.asciidoctor.jruby.ast.impl.ListItemImpl@7e767655", "org.asciidoctor.jruby.ast.impl.ListItemImpl@2faa03e2", "org.asciidoctor.jruby.ast.impl.ListItemImpl@624f7d96" ]
+    "lst" : [ "направить обращение в СТП;", "получить информацию по обращению;", "внести дополнительную информацию по обращению;", "вернуть обращение в работу или закрыть его." ]
   }, {
     "content" : "Время доступности API BPM 24 часа, 7 дней в неделю с перерывами на техническое обслуживание."
   }, {
@@ -17,10 +17,10 @@
     "content" : "Для регистрации на Портале технической поддержки необходимо создать обращение в СТП Оператора на электронный почтовый адрес: <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>. В обращении необходимо указать:"
   }, {
     "content" : "list",
-    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@3ea06b62", "org.asciidoctor.jruby.ast.impl.ListItemImpl@41eaca47", "org.asciidoctor.jruby.ast.impl.ListItemImpl@5850bc21" ]
+    "lst" : [ "наименование Пользователя;", "ИНН;", "контактные данные представителей, уполномоченных осуществлять взаимодействие с СТП:" ]
   }, {
     "content" : "list",
-    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@60bd6db8", "org.asciidoctor.jruby.ast.impl.ListItemImpl@5d7bf1b6", "org.asciidoctor.jruby.ast.impl.ListItemImpl@4a54a0ac", "org.asciidoctor.jruby.ast.impl.ListItemImpl@17b8ac73" ]
+    "lst" : [ "Ф.И.О.;", "должность;", "номер телефона;", "адрес электронной почты." ]
   }, {
     "content" : "Изменения в API BPM публикуются на сайте <a href=\"https://честныйзнак.рф/\">честныйзнак.рф</a>, а также в информационной рассылке не позднее двух недель до внесения изменений."
   }, {
@@ -49,7 +49,7 @@
     "content" : "Метод возвращает следующую информацию по обращению:"
   }, {
     "content" : "list",
-    "lst" : [ "org.asciidoctor.jruby.ast.impl.ListItemImpl@23200436", "org.asciidoctor.jruby.ast.impl.ListItemImpl@21dda498", "org.asciidoctor.jruby.ast.impl.ListItemImpl@4d03f7e", "org.asciidoctor.jruby.ast.impl.ListItemImpl@3aedf9e5", "org.asciidoctor.jruby.ast.impl.ListItemImpl@19cf4b3a", "org.asciidoctor.jruby.ast.impl.ListItemImpl@55fad5ff" ]
+    "lst" : [ "тема;", "описание;", "приоритет;", "состояние обращения;", "сообщения от специалистов СТП и ссылки на прикрепленные файлы;", "решение по обращению." ]
   }, {
     "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case/{номер обращения}"
   }, {

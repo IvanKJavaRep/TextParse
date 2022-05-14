@@ -5,6 +5,8 @@ import org.asciidoctor.Options;
 import org.asciidoctor.OptionsBuilder;
 import org.asciidoctor.SafeMode;
 import org.asciidoctor.ast.Document;
+import org.asciidoctor.ast.List;
+import org.asciidoctor.ast.ListItem;
 import org.asciidoctor.ast.StructuralNode;
 import personal.ivan.domain.Paragraph;
 import personal.ivan.domain.TxtList;
@@ -35,12 +37,15 @@ public class AsciidocREadFile implements IReadable {
                 Paragraph p = new Paragraph(node.getContent().toString());
                 doc.elements.add(p);
             }
-            else if(s.equals("ulist"))
+            else if(node instanceof List)
             {
+                List f = (List)node;
                 ArrayList<String> l1 = new ArrayList<>();
-                for (var n:node.getBlocks()
+                //System.out.println(node.getBlocks().get(0));
+                for (var n:f.getItems()
                      ) {
-                    l1.add(n.toString());
+                    ListItem li = (ListItem)n;
+                    l1.add(li.getText());
                 }
                 TxtList l = new TxtList(l1,"list");
                 doc.elements.add(l);
@@ -50,7 +55,7 @@ public class AsciidocREadFile implements IReadable {
     }
 
     public void GetAllBlocks(StructuralNode block) {
-        System.out.println(block.getNodeName());
+        //System.out.println(block.getNodeName());
         if(block.getNodeName().equals("ulist"))
         {
             lst.add(block);
@@ -58,7 +63,7 @@ public class AsciidocREadFile implements IReadable {
         //System.out.println(1);
         if (block.getBlocks().size() == 0) {
             lst.add(block);
-            System.out.println(block.getNodeName());
+            //System.out.println(block.getNodeName());
         } else {
             for (var b : block.getBlocks()
             ) {
