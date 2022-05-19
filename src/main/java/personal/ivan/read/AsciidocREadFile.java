@@ -5,11 +5,7 @@ import org.asciidoctor.Options;
 import org.asciidoctor.OptionsBuilder;
 import org.asciidoctor.SafeMode;
 import org.asciidoctor.ast.Document;
-import org.asciidoctor.ast.List;
-import org.asciidoctor.ast.ListItem;
 import org.asciidoctor.ast.StructuralNode;
-import personal.ivan.domain.Paragraph;
-import personal.ivan.domain.TxtList;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,51 +15,26 @@ import static org.asciidoctor.Asciidoctor.Factory.create;
 
 public class AsciidocREadFile implements IReadable {
     ArrayList<StructuralNode> lst = new ArrayList<>();
-    public personal.ivan.domain.Document readTreeAsciidoc() {
+
+    public ArrayList<StructuralNode> readTreeAsciidoc() {
         Asciidoctor asciidoctor = create();
         Document document = asciidoctor.loadFile(new File("crptascii.adoc"), Options.builder().build());
-        personal.ivan.domain.Document doc = new personal.ivan.domain.Document("Document");
         for (var block : document.getBlocks()
         ) {
             GetAllBlocks(block);
         }
         System.out.println(lst.size());
-        for (var node:lst
-             ) {
-            String s = node.getNodeName();
-            if(s.equals("paragraph"))
-            {
-                //System.out.println("ddd");
-                Paragraph p = new Paragraph(node.getContent().toString());
-                doc.elements.add(p);
-            }
-            else if(node instanceof List)
-            {
-                List f = (List)node;
-                ArrayList<String> l1 = new ArrayList<>();
-                //System.out.println(node.getBlocks().get(0));
-                for (var n:f.getItems()
-                     ) {
-                    ListItem li = (ListItem)n;
-                    l1.add(li.getText());
-                }
-                TxtList l = new TxtList(l1,"list");
-                doc.elements.add(l);
-            }
-        }
-        return doc;
+
+        return lst;
     }
 
     public void GetAllBlocks(StructuralNode block) {
-        //System.out.println(block.getNodeName());
-        if(block.getNodeName().equals("ulist"))
-        {
+        System.out.println(block.getNodeName());
+        if (block.getNodeName().equals("ulist")) {
             lst.add(block);
         }
-        //System.out.println(1);
         if (block.getBlocks().size() == 0) {
             lst.add(block);
-            //System.out.println(block.getNodeName());
         } else {
             for (var b : block.getBlocks()
             ) {

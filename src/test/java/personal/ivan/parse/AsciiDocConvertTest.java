@@ -1,9 +1,12 @@
 package personal.ivan.parse;
 
+import org.asciidoctor.ast.StructuralNode;
 import org.junit.jupiter.api.Test;
 import personal.ivan.domain.Document;
 import personal.ivan.process.ProcessDocument;
 import personal.ivan.read.AsciidocREadFile;
+
+import java.util.ArrayList;
 
 public class AsciiDocConvertTest {
     /*@Test void test() throws FileNotFoundException {
@@ -20,7 +23,9 @@ public class AsciiDocConvertTest {
     @Test void test1()
     {
         AsciidocREadFile reader = new AsciidocREadFile();
-        Document d = reader.readTreeAsciidoc();
+        AsciidocParser parser = new AsciidocParser();
+        ArrayList<StructuralNode> lst  = reader.readTreeAsciidoc();
+        Document d = parser.parseAscii(lst);
         ProcessDocument pd = new ProcessDocument();
         pd.process(d,ProcessDocument::processToJson);
     }

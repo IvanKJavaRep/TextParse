@@ -14,6 +14,10 @@
   }, {
     "content" : "Доступ к API BPM предоставляется Участникам, зарегистрированным на Портале технической поддержки - <a href=\"https://support.crpt.ru\">support.crpt.ru</a>. Тестовый стенд доступен по адресу <a href=\"https://int.support.crpt.ru/\">int.support.crpt.ru</a>."
   }, {
+    "content" : "https://support.crpt.ru"
+  }, {
+    "content" : "https://int.support.crpt.ru/"
+  }, {
     "content" : "Для регистрации на Портале технической поддержки необходимо создать обращение в СТП Оператора на электронный почтовый адрес: <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>. В обращении необходимо указать:"
   }, {
     "content" : "list",

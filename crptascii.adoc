@@ -137,7 +137,7 @@ curl -X POST "{hostname}/ServiceModel/AuthService.svc/Login"
 
 *Пример запроса:*
 
-[source,json]
+ [source,json]
 ----
 {
    "UserName":"string",
