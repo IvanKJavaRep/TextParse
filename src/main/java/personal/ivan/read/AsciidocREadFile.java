@@ -6,6 +6,7 @@ import org.asciidoctor.OptionsBuilder;
 import org.asciidoctor.SafeMode;
 import org.asciidoctor.ast.Document;
 import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.ast.Table;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,6 +33,12 @@ public class AsciidocREadFile implements IReadable {
         System.out.println(block.getNodeName());
         if (block.getNodeName().equals("ulist")) {
             lst.add(block);
+            return;
+        }
+        if(block instanceof Table)
+        {
+            lst.add(block);
+            return;
         }
         if (block.getBlocks().size() == 0) {
             lst.add(block);
@@ -48,7 +55,7 @@ public class AsciidocREadFile implements IReadable {
         try {
             Asciidoctor adoc = Asciidoctor.Factory.create();
             adoc.convertFile(new File(filename),
-                    OptionsBuilder.options().toFile(new File("outputAsci.html"))
+                    OptionsBuilder.options().toFile(new File("crptascii.html"))
                             .safe(SafeMode.UNSAFE));
             FileInputStream fstream = new FileInputStream("outputAsci.html");
             return fstream;

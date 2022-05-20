@@ -23,6 +23,7 @@ public class AsciiDocConvertTest {
     @Test void test1()
     {
         AsciidocREadFile reader = new AsciidocREadFile();
+        //reader.Read("crptascii.adoc");
         AsciidocParser parser = new AsciidocParser();
         ArrayList<StructuralNode> lst  = reader.readTreeAsciidoc();
         Document d = parser.parseAscii(lst);

@@ -3,6 +3,7 @@ package personal.ivan.parse;
 import org.asciidoctor.ast.List;
 import org.asciidoctor.ast.ListItem;
 import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.ast.Table;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -21,21 +22,17 @@ import java.util.regex.Pattern;
 public class AsciidocParser implements IParse {
 
 
-    public Document parseAscii(ArrayList<StructuralNode> lst)
-    {
+    public Document parseAscii(ArrayList<StructuralNode> lst) {
         personal.ivan.domain.Document doc = new personal.ivan.domain.Document("Document");
-        String regex = "\\b(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
-        String s2 = "^(?:(?:http|https)://)?((?:[A-ZА-ЯЁ0-9](?:[A-ZА-ЯЁ0-9-]{0,61}[A-ZА-ЯЁ0-9])?\\.)+(?:[A-ZА-ЯЁ]{2,6}\\.?|[A-ZА-ЯЁ0-9-]{2,}(?<!-)\\.?))(?:/?|[/?]\\S+)$";
+        String regex = "\\b(https?|ftp|file)://[-\\p{L}0-9+&@#/%?=~_|!:,.;]*[-\\p{L}0-9+&@#/%=~_|]";
         for (var node : lst
         ) {
-            String s = node.getNodeName();
-            if (s.equals("paragraph")) {
+            if (node.getContext() == "paragraph") {
                 Paragraph p = new Paragraph(node.getContent().toString());
                 doc.elements.add(p);
                 Pattern pat = Pattern.compile(regex);
                 Matcher mat = pat.matcher(p.content);
-                while(mat.find())
-                {
+                while (mat.find()) {
                     doc.elements.add(new Link(mat.group()));
                 }
             } else if (node instanceof List) {
@@ -47,17 +44,36 @@ public class AsciidocParser implements IParse {
                     l1.add(li.getText());
                     Pattern pat = Pattern.compile(regex);
                     Matcher mat = pat.matcher(li.getText());
-                    while(mat.find())
-                    {
+                    while (mat.find()) {
                         doc.elements.add(new Link(mat.group()));
                     }
                 }
                 TxtList l = new TxtList(l1, "list");
                 doc.elements.add(l);
+            } else if (node instanceof Table) {
+                Table t = (Table) node;
+                personal.ivan.domain.Table table = new personal.ivan.domain.Table("table");
+
+                for (var el : t.getHeader()) {
+                    ArrayList<String> elements = new ArrayList<>();
+                    for (var cell : el.getCells()) {
+                        elements.add(cell.getText());
+                    }
+                    table.listOfRows.add(elements);
+                }
+                for (var el : t.getBody()) {
+                    ArrayList<String> elements = new ArrayList<>();
+                    for (var cell : el.getCells()) {
+                        elements.add(cell.getText());
+                    }
+                    table.listOfRows.add(elements);
+                }
+                doc.elements.add(table);
             }
         }
         return doc;
     }
+
     @Override
     public Document parse(String filename) {
         File in = new File(filename);
@@ -66,7 +82,7 @@ public class AsciidocParser implements IParse {
             Elements paragraphs = doc.select("p");
             Paragraph par;
             personal.ivan.domain.Document docu = new personal.ivan.domain.Document("Document");
-            for(Element p : paragraphs) {
+            for (Element p : paragraphs) {
                 String ss = p.text();
                 System.out.println(ss);
                 par = new Paragraph(ss);
