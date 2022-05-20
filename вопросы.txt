@@ -1,5 +1,6 @@
 1. Использовал регулярные выражения для нахождения ссылок. Что сделать, чтобы идея распознавала русские символы?
 3. Asciidoctor не видит списков внутри элементов таблицы. Это я неправильно смотрю или это правда так?
+4. listing vs literal? Listring - сам код , а второй - способ его представления?
 
 *Параметры ответа:*
 
@@ -51,3 +52,8 @@
 
 
 === Метод создания обращения
+
+
+((CellImpl)((RowImpl) t.getBody().get(0)).getCells().get(0)).getContent();
+
+((ListItem)((List)((CellImpl)((RowImpl)t.getBody().get(8)).getCells().get(4)).getInnerDocument().getBlocks().get(1)).getItems().get(3)).getText();

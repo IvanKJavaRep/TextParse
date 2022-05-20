@@ -35,8 +35,7 @@ public class AsciidocREadFile implements IReadable {
             lst.add(block);
             return;
         }
-        if(block instanceof Table)
-        {
+        if (block instanceof Table) {
             lst.add(block);
             return;
         }
