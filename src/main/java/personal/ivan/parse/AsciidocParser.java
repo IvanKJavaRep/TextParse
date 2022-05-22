@@ -32,6 +32,20 @@ public class AsciidocParser implements IParse {
         }
         return doc;
     }
+    public void parseAsciidoc(ArrayList<StructuralNode> lst, Document d) {
+        //personal.ivan.domain.Document doc = new personal.ivan.domain.Document("Document");
+        for (var node : lst
+        ) {
+            if (node.getContext() == "paragraph") {
+                ParagraphImpl.ConvertToParagraph(d, node);
+            } else if (node instanceof List) {
+                d.elements.add(UListImpl.ConvertToTxtList(node));
+                UListImpl.FindLinks(d, node);
+            } else if (node instanceof Table) {
+                TableImpl.ConvertToTable(d,node);
+            }
+        }
+    }
 
     @Override
     public Document parse(String filename) {

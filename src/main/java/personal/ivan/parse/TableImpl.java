@@ -16,6 +16,10 @@ public class TableImpl {
             ArrayList<String> elements = new ArrayList<>();
             for (var cell : el.getCells()) {
                 elements.add(cell.getText());
+                var document = cell.getInnerDocument();
+                if(document!=null) {
+                    FindListsRecur.FindLists(document, doc);
+                }
             }
             table.listOfRows.add(elements);
         }
@@ -23,6 +27,10 @@ public class TableImpl {
             ArrayList<String> elements = new ArrayList<>();
             for (var cell : el.getCells()) {
                 elements.add(cell.getText());
+                var document = cell.getInnerDocument();
+                if(document!=null) {
+                    FindListsRecur.FindLists(document, doc);
+                }
             }
             table.listOfRows.add(elements);
         }

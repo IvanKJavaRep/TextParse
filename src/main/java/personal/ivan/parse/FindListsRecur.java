@@ -1,19 +1,18 @@
 package personal.ivan.parse;
 
-import org.asciidoctor.ast.List;
-import org.asciidoctor.ast.ListItem;
-import org.asciidoctor.ast.StructuralNode;
-import org.asciidoctor.ast.Table;
-import org.asciidoctor.jruby.ast.impl.CellImpl;
-import org.asciidoctor.jruby.ast.impl.RowImpl;
-
-import java.util.ArrayList;
+import org.asciidoctor.ast.Document;
+import personal.ivan.read.AsciidocREadFile;
 
 public class FindListsRecur {
-    public void FindLists(Table t)
+    public static void FindLists(Document d, personal.ivan.domain.Document mydoc)
     {
         //((ListItem)((List)((CellImpl)((RowImpl)t.getBody().get(8)).getCells().get(4)).getInnerDocument().getBlocks().get(1)).getItems().get(3)).getText();
-        ArrayList<StructuralNode> lst =((ListItem)((List)((CellImpl)((RowImpl)t.getBody().get(8)).getCells().get(4)).getInnerDocument().getBlocks();
-
+        //ArrayList<StructuralNode> lst = (ArrayList<StructuralNode>) ((CellImpl)((RowImpl)t.getBody().get(8)).getCells().get(4)).getInnerDocument().getBlocks();
+        if(d.getBlocks().size()>0) {
+            AsciidocREadFile reader = new AsciidocREadFile();
+            AsciidocParser parser = new AsciidocParser();
+            reader.GetAllBlocks(d);
+            parser.parseAsciidoc(reader.lst, mydoc);
+        }
     }
 }
