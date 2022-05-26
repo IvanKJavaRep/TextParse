@@ -13,6 +13,8 @@ public class ParagraphImpl {
         Paragraph p = new Paragraph(node.getContent().toString());
         doc.elements.add(p);
         findLinks(doc, p);
+        
+
 
     }
 

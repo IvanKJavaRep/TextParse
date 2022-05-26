@@ -2,7 +2,6 @@ package personal.ivan.parse;
 
 import org.asciidoctor.ast.StructuralNode;
 import org.junit.jupiter.api.Test;
-import personal.ivan.domain.Document;
 import personal.ivan.process.ProcessDocument;
 import personal.ivan.read.AsciidocREadFile;
 
@@ -24,9 +23,10 @@ public class AsciiDocConvertTest {
     {
         AsciidocREadFile reader = new AsciidocREadFile();
         AsciidocParser parser = new AsciidocParser();
-        ArrayList<StructuralNode> lst  = reader.readTreeAsciidoc();
-        Document d = parser.parseAscii(lst);
         ProcessDocument pd = new ProcessDocument();
-        pd.process(d,ProcessDocument::processToJson);
+        personal.ivan.domain.Document doc = new personal.ivan.domain.Document("Document");
+        ArrayList<StructuralNode> lst  = reader.readTreeAsciidoc();
+        parser.parseAsciidoc(lst,doc);
+        pd.process(doc,ProcessDocument::processToJson);
     }
 }

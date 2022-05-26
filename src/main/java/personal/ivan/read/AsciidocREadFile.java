@@ -2,8 +2,6 @@ package personal.ivan.read;
 
 import org.asciidoctor.Asciidoctor;
 import org.asciidoctor.Options;
-import org.asciidoctor.OptionsBuilder;
-import org.asciidoctor.SafeMode;
 import org.asciidoctor.ast.Document;
 import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.ast.Table;
@@ -24,13 +22,11 @@ public class AsciidocREadFile implements IReadable {
         ) {
             GetAllBlocks(block);
         }
-        System.out.println(lst.size());
-
         return lst;
     }
 
     public void GetAllBlocks(StructuralNode block) {
-        System.out.println(block.getNodeName());
+        //System.out.println(block.getNodeName());
         if (block.getNodeName().equals("ulist")) {
             lst.add(block);
             return;
@@ -51,7 +47,7 @@ public class AsciidocREadFile implements IReadable {
 
     @Override
     public FileInputStream Read(String filename) {
-        try {
+        /*try {
             Asciidoctor adoc = Asciidoctor.Factory.create();
             adoc.convertFile(new File(filename),
                     OptionsBuilder.options().toFile(new File("crptascii.html"))
@@ -60,7 +56,7 @@ public class AsciidocREadFile implements IReadable {
             return fstream;
         } catch (Exception e) {
             System.out.println(e);
-        }
+        }*/
         return null;
     }
 }

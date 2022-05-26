@@ -45,7 +45,13 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X POST \"{hostname}/ServiceModel/AuthService.svc/Login\""
+  }, {
     "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"UserName\":\"string\",\n   \"UserPassword\":\"string\"\n}"
   }, {
     "content" : "<strong>Параметры запроса:</strong>"
   }, {
@@ -54,11 +60,20 @@
   }, {
     "content" : "<strong>Заголовки ответа:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "Set-Cookie: BPMLOADER=cookie_value; path=/Creatio_application_address; HttpOnly\n\nSet-Cookie: .ASPXAUTH=cookie_value; path=/Creatio_application_address; HttpOnly\n\nSet-Cookie: BPMCSRF=cookie_value; path=/\n\nSet-Cookie: UserName=cookie_value; expires=date_expire_to; path=/; HttpOnly"
+  }, {
     "content" : "Cookie BPMLOADER, .ASPXAUTH, BPMCSRF нужно добавлять в headers запросов."
   }, {
     "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "{\n   \"Code\":200,\n   \"Message\":\"string\",\n   \"Exception\":null,\n   \"PasswordChangeUrl\":null,\n   \"RedirectUrl\":null\n}"
+  }, {
     "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"Code\":1,\n   \"Message\":\"Неправильное имя пользователя или пароль\",\n   \"Exception\":{\n      \"HelpLink\":null,\n      \"InnerException\":null,\n      \"Message\":\"Security error\",\n      \"StackTrace\":\"\",\n      \"Type\":\"System.Security.SecurityException\"\n   },\n   \"PasswordChangeUrl\":null,\n   \"RedirectUrl\":null\n}"
   }, {
     "content" : "Метод возвращает следующую информацию по обращению:"
   }, {
@@ -71,9 +86,18 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X GET \"{hostname}/0/ssp/rest/PublicWebServices/case/SR00000000\"\n-H \"Cookie:&lt;cookie&gt;\""
+  }, {
     "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "{\n   \"ok\":true,\n   \"data\":{\n      \"createdon\":\"22.07.2021 16:18:59\",\n      \"files\":[\n\n      ],\n      \"id\":null,\n      \"messages\":[\n\n      ],\n      \"modifiedon\":null,\n      \"number\":\"SR00000000\",\n      \"priority\":4,\n      \"satisfactioncomment\":\"\",\n      \"satisfactionlevel\":0,\n      \"solution\":\"string\",\n      \"status\":\"Закрыто\",\n      \"statuscode\":5,\n      \"statusdate\":\"25.07.2021 16:47:50\",\n      \"subject\":\"string\",\n      \"symptoms\":\"string\"\n   }\n}"
+  }, {
     "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"error\":\"case not found\"\n}"
   }, {
     "content" : "<strong>Параметры ответа:</strong>"
   }, {
@@ -93,11 +117,23 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/case\"\n-H \"Cookie:&lt;cookie&gt;\""
+  }, {
     "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"subject\":\"Проблема с авторизацией\",\n   \"symptoms\":\"Не выполняется авторизация с помощью УКЭП\"\n}"
   }, {
     "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "{\n   \"ok\":true,\n   \"data\":\"SR00000000\"\n}"
+  }, {
     "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"error\":\"case not found\",\n   \"ok\":false\n}"
   }, {
     "content" : "<strong>Параметры ответа:</strong>"
   }, {
@@ -112,6 +148,9 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/file?filename=case.xlsx&amp;number=SR00000000&amp;totallength=35000\"\n-H \"Cookie:&lt;cookie&gt;\""
+  }, {
     "content" : "<strong>Параметры запроса:</strong>"
   }, {
     "content" : "table",
@@ -119,7 +158,13 @@
   }, {
     "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "{\n   \"ok\":true\n}"
+  }, {
     "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "\"File not found\""
   }, {
     "content" : "<strong>Параметры ответа:</strong>"
   }, {
@@ -139,7 +184,13 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/message\"\n-H \"Cookie:&lt;cookie&gt;\""
+  }, {
     "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"number\":\"SR00000000\",\n   \"text\":\"Проблема решена\"\n}"
   }, {
     "content" : "<strong>Параметры запроса:</strong>"
   }, {
@@ -148,7 +199,13 @@
   }, {
     "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "{\n   \"ok\":true,\n   \"data\":\"string\"\n}"
+  }, {
     "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"error\":\"number data is required\",\n   \"ok\":false\n}"
   }, {
     "content" : "<strong>Параметры ответа:</strong>"
   }, {
@@ -163,7 +220,13 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/update_case\"\n-H \"Cookie:&lt;cookie&gt;\""
+  }, {
     "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"number\":\"SR00000000\",\n   \"status\":\"close\",\n   \"statuscode\":\"5\",\n   \"satisfactionlevel\":\"3\",\n   \"satisfactioncomment\":\"string\",\n   \"statusdate\":\"13.06.2021 11:59:06\"\n}"
   }, {
     "content" : "<strong>Параметры запроса:</strong>"
   }, {
@@ -177,7 +240,13 @@
   }, {
     "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "{\n   \"ok\":true,\n   \"data\":\"SR00000000\"\n}"
+  }, {
     "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"error\":\"number data is required\",\n   \"ok\":false\n}"
   }, {
     "content" : "<strong>Параметры ответа:</strong>"
   }, {
@@ -190,7 +259,13 @@
   }, {
     "content" : "<strong>Пример строки запроса:</strong>"
   }, {
+    "content" : "listing",
+    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/cases\"\n-H \"Cookie:&lt;cookie&gt;\""
+  }, {
     "content" : "<strong>Пример запроса:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"numbers\":[\"SR00000000\"],\n   \"statuscode\": [1, 2],\n   \"count\":\"2\",\n   \"skip\":\"0\",\n   \"from\":\"06.04.2021 11:17:05\",\n   \"to\":\"06.04.2021 11:17:21\",\n   \"search_line\":\"string\",\n   \"availability_level\":\"1\",\n   \"sort\":[\"modifiedon\", \"statuscode\"]\n}"
   }, {
     "content" : "<strong>Параметры запроса:</strong>"
   }, {
@@ -210,6 +285,9 @@
     "content" : "Примечание: в запросе должен быть обязательно заполнен один из параметров."
   }, {
     "content" : "<strong>Пример ответа:</strong>"
+  }, {
+    "content" : "listing",
+    "source" : "{\n   \"ok\":true,\n   \"count\":1,\n   \"data\":[\n      {\n         \"createdon\":\"06.04.2021 11:17:21\",\n         \"files\":[\n\n         ],\n         \"id\":\"00000001\",\n         \"messages\":[\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"06.04.2021 11:17:24\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000002\",\n               \"text\":\"string\",\n               \"type\":null\n            },\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"07.04.2021 14:45:18\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000003\",\n               \"text\":\"string\",\n               \"type\":null\n            },\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"07.04.2021 14:45:24\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000004\",\n               \"text\":\"string\",\n               \"type\":null\n            }\n         ],\n         \"modifiedon\":\"07.04.2021 14:45:18\",\n         \"number\":\"SR0000000\",\n         \"priority\":4,\n         \"satisfactioncomment\":\"\",\n         \"satisfactionlevel\":0,\n         \"solution\":\"string\",\n         \"status\":\"Предоставлено решение\",\n         \"statuscode\":2,\n         \"statusdate\":\"07.04.2021 14:45:13\",\n         \"subject\":\"string\",\n         \"symptoms\":\"string\"\n      }\n   ],\n   \"pagecount\":1\n}"
   }, {
     "content" : "<strong>Параметры ответа:</strong>"
   }, {
