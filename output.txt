@@ -50,6 +50,9 @@
   }, {
     "content" : "<strong>Пример запроса:</strong>"
   }, {
+    "content" : "literal",
+    "source" : "[source,json]"
+  }, {
     "content" : "listing",
     "source" : "{\n   \"UserName\":\"string\",\n   \"UserPassword\":\"string\"\n}"
   }, {
