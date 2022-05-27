@@ -1,30 +1,28 @@
 package personal.ivan.parse;
 
 import org.asciidoctor.ast.StructuralNode;
-import personal.ivan.domain.Document;
+import personal.ivan.GlobalConstants;
 import personal.ivan.domain.Link;
 import personal.ivan.domain.Paragraph;
 
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ParagraphImpl {
-    public static void ConvertToParagraph(Document doc, StructuralNode node) {
+    public static Paragraph ConvertToParagraph( StructuralNode node) {
         Paragraph p = new Paragraph(node.getContent().toString());
-        doc.elements.add(p);
-        findLinks(doc, p);
-        
-
+        return p;
 
     }
 
-    public static void findLinks(Document doc, Paragraph p) {
-        // ищет url в тексте с доменами на любом языке.
-        String regex = "\\b(https?|ftp|file)://[-\\p{L}0-9+&@#/%?=~_|!:,.;]*[-\\p{L}0-9+&@#/%=~_|]";
-        Pattern pat = Pattern.compile(regex);
+    public static ArrayList<Link> findLinks(Paragraph p) {
+        Pattern pat = Pattern.compile(GlobalConstants.regex);
         Matcher mat = pat.matcher(p.content);
+        ArrayList<Link> lst = new ArrayList<>();
         while (mat.find()) {
-            doc.elements.add(new Link(mat.group()));
+            lst.add(new Link(mat.group()));
         }
+        return lst;
     }
 }

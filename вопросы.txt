@@ -3,3 +3,5 @@ section это просто отсек, который содержит каки
 как найти literal в тексте?
 
 есть ли передача по ссылке в джаве?
+
+((ListItemImpl)((ListImpl)(n).getBlocks().get(0)).getItems().get(0)).getText();

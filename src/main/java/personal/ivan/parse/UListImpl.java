@@ -3,7 +3,7 @@ package personal.ivan.parse;
 import org.asciidoctor.ast.List;
 import org.asciidoctor.ast.ListItem;
 import org.asciidoctor.ast.StructuralNode;
-import personal.ivan.domain.Document;
+import personal.ivan.GlobalConstants;
 import personal.ivan.domain.Link;
 import personal.ivan.domain.TxtList;
 
@@ -18,24 +18,27 @@ public class UListImpl {
         for (var n : f.getItems()
         ) {
             ListItem li = (ListItem) n;
+            //org.asciidoctor.ast.Document d = li.getDocument();
+            //FindListsRecur.FindLists(d, doc);
             l1.add(li.getText());
         }
         TxtList l = new TxtList(l1, "list");
         return l;
     }
 
-    public static void FindLinks(Document doc, StructuralNode node) {
+    public static ArrayList<Link> FindLinks(StructuralNode node) {
         // ищет url в тексте с доменами на любом языке.
-        String regex = "\\b(https?|ftp|file)://[-\\p{L}0-9+&@#/%?=~_|!:,.;]*[-\\p{L}0-9+&@#/%=~_|]";
+        ArrayList<Link> lst = new ArrayList<>();
         List f = (List) node;
         for (var n : f.getItems()
         ) {
             ListItem li = (ListItem) n;
-            Pattern pat = Pattern.compile(regex);
+            Pattern pat = Pattern.compile(GlobalConstants.regex);
             Matcher mat = pat.matcher(li.getText());
             while (mat.find()) {
-                doc.elements.add(new Link(mat.group()));
+                lst.add(new Link(mat.group()));
             }
         }
+        return lst;
     }
 }

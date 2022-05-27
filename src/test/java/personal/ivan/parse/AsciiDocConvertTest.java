@@ -19,14 +19,14 @@ public class AsciiDocConvertTest {
         ProcessDocument pd = new ProcessDocument();
         pd.process(d, ProcessDocument::processToJson);
     }*/
-    @Test void test1()
-    {
+    @Test
+    void test1() {
         AsciidocREadFile reader = new AsciidocREadFile();
         AsciidocParser parser = new AsciidocParser();
         ProcessDocument pd = new ProcessDocument();
-        personal.ivan.domain.Document doc = new personal.ivan.domain.Document("Document");
-        ArrayList<StructuralNode> lst  = reader.readTreeAsciidoc();
-        parser.parseAsciidoc(lst,doc);
-        pd.process(doc,ProcessDocument::processToJson);
+        //personal.ivan.domain.Document doc = new personal.ivan.domain.Document("Document");
+        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc();
+        parser.parseAsciidoc(lst);
+        pd.process(parser.d, ProcessDocument::processToJson);
     }
 }

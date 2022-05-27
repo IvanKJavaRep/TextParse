@@ -3,7 +3,7 @@ package personal.ivan.parse;
 import org.asciidoctor.ast.Cell;
 import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.ast.Table;
-import personal.ivan.domain.Document;
+import personal.ivan.GlobalConstants;
 import personal.ivan.domain.Link;
 
 import java.util.ArrayList;
@@ -11,8 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TableImpl {
-    public static void ConvertToTable(Document doc,StructuralNode node)
-    {
+    public static personal.ivan.domain.Table ConvertToTable(StructuralNode node) {
         Table t = (Table) node;
         personal.ivan.domain.Table table = new personal.ivan.domain.Table("table");
 
@@ -20,10 +19,10 @@ public class TableImpl {
             ArrayList<String> elements = new ArrayList<>();
             for (var cell : el.getCells()) {
                 elements.add(cell.getText());
-                findLinks(doc, cell);
+                findLinks(cell);
                 var document = cell.getInnerDocument();
-                if(document!=null) {
-                    FindListsRecur.FindLists(document, doc);
+                if (document != null) {
+                    FindListsRecur.FindLists(document);
                 }
             }
             table.listOfRows.add(elements);
@@ -32,23 +31,25 @@ public class TableImpl {
             ArrayList<String> elements = new ArrayList<>();
             for (var cell : el.getCells()) {
                 elements.add(cell.getText());
-                findLinks(doc, cell);
+                findLinks(cell);
                 var document = cell.getInnerDocument();
-                if(document!=null) {
-                    FindListsRecur.FindLists(document, doc);
+                if (document != null) {
+                    FindListsRecur.FindLists(document);
                 }
             }
             table.listOfRows.add(elements);
         }
-        doc.elements.add(table);
+        return table;
     }
-    public static void findLinks(Document doc, Cell cell) {
+
+    public static ArrayList<Link> findLinks(Cell cell) {
         // ищет url в тексте с доменами на любом языке.
-        String regex = "\\b(https?|ftp|file)://[-\\p{L}0-9+&@#/%?=~_|!:,.;]*[-\\p{L}0-9+&@#/%=~_|]";
-        Pattern pat = Pattern.compile(regex);
+        ArrayList<Link> lst = new ArrayList<>();
+        Pattern pat = Pattern.compile(GlobalConstants.regex);
         Matcher mat = pat.matcher(cell.getText());
         while (mat.find()) {
-            doc.elements.add(new Link(mat.group()));
+            lst.add(new Link(mat.group()));
         }
+        return lst;
     }
 }
