@@ -3,6 +3,7 @@ package personal.ivan.parse;
 import org.asciidoctor.ast.List;
 import org.asciidoctor.ast.ListItem;
 import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.jruby.ast.impl.ListItemImpl;
 import personal.ivan.domain.Document;
 import personal.ivan.domain.TxtList;
 
@@ -15,8 +16,8 @@ public class OListImpl {
         for (var n : f.getItems()
         ) {
             ListItem li = (ListItem) n;
-            //org.asciidoctor.ast.Document d = li.getDocument();
-            //FindListsRecur.FindLists(d, doc);
+            ArrayList<StructuralNode> g = (ArrayList<StructuralNode>) ((ListItemImpl)(li)).getBlocks();
+            AsciidocParser.parseAsciidoc(g);
             l1.add(li.getText());
         }
         TxtList l = new TxtList(l1, "list");

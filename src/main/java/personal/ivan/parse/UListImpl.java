@@ -3,6 +3,7 @@ package personal.ivan.parse;
 import org.asciidoctor.ast.List;
 import org.asciidoctor.ast.ListItem;
 import org.asciidoctor.ast.StructuralNode;
+import org.asciidoctor.jruby.ast.impl.ListItemImpl;
 import personal.ivan.GlobalConstants;
 import personal.ivan.domain.Link;
 import personal.ivan.domain.TxtList;
@@ -18,8 +19,11 @@ public class UListImpl {
         for (var n : f.getItems()
         ) {
             ListItem li = (ListItem) n;
-            //org.asciidoctor.ast.Document d = li.getDocument();
-            //FindListsRecur.FindLists(d, doc);
+            ArrayList<StructuralNode> g = new ArrayList<>();
+            for (var item : ((ListItemImpl) (li)).getBlocks()) {
+                g.add(item);
+            }
+            AsciidocParser.parseAsciidoc(g);
             l1.add(li.getText());
         }
         TxtList l = new TxtList(l1, "list");
@@ -27,7 +31,6 @@ public class UListImpl {
     }
 
     public static ArrayList<Link> FindLinks(StructuralNode node) {
-        // ищет url в тексте с доменами на любом языке.
         ArrayList<Link> lst = new ArrayList<>();
         List f = (List) node;
         for (var n : f.getItems()

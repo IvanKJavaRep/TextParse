@@ -14,8 +14,12 @@ import java.util.ArrayList;
 public class AsciidocParser implements IParse {
 
     public static Document d = new Document("document");
+    public Document GetDocument()
+    {
+        return d;
+    }
 
-    public void parseAsciidoc(ArrayList<StructuralNode> lst) {
+    public static void parseAsciidoc(ArrayList<StructuralNode> lst) {
         for (var node : lst
         ) {
             System.out.println(node.getNodeName());
