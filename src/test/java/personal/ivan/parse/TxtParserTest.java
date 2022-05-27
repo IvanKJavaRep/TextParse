@@ -8,8 +8,8 @@ import personal.ivan.read.ReadFile;
 import java.io.FileInputStream;
 
 public class TxtParserTest {
-    @Test void test()
-    {
+    @Test
+    void test() {
         try {
             // объект для чтения
             ReadFile rf = new ReadFile();
@@ -20,10 +20,7 @@ public class TxtParserTest {
             // объект для сериализации
             ProcessDocument pd = new ProcessDocument();
             pd.process(d, ProcessDocument::processToJson);
-        }
-        catch (Exception e)
-        {
-            System.out.println("11111111");
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
