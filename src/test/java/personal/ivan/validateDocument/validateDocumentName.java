@@ -10,7 +10,7 @@ import java.io.File;
 
 import static org.asciidoctor.Asciidoctor.Factory.create;
 
-public class validateByName {
+public class validateDocumentName {
     @Test
     void test() {
         Asciidoctor asciidoctor = create();
@@ -18,8 +18,8 @@ public class validateByName {
         Assertions.assertTrue(document.getTitle().toString().length() < 256);
 
         //get file from resource directory
-        File inputXmlFile = new File(this.getClass().getResource("/testdoc.adoc").getFile());
-        System.out.println(inputXmlFile.getAbsolutePath());
+        /*File inputXmlFile = new File(this.getClass().getResource("/testdoc.adoc").getFile());
+        System.out.println(inputXmlFile.getAbsolutePath());*/
     }
 }
 

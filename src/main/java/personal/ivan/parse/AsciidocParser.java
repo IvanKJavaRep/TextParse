@@ -3,14 +3,12 @@ package personal.ivan.parse;
 import org.asciidoctor.ast.List;
 import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.ast.Table;
-import personal.ivan.domain.Document;
-import personal.ivan.domain.Link;
-import personal.ivan.domain.Paragraph;
-import personal.ivan.domain.TxtList;
+import personal.ivan.domain.*;
 
 import java.io.FileInputStream;
 import java.net.MalformedURLException;
-import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class AsciidocParser implements IParse {
@@ -50,15 +48,8 @@ public class AsciidocParser implements IParse {
             } else if (node.getNodeName().equals("literal")) {
                 d.elements.add(LiteralImpl.ConvertToLiteral(node));
             } else if (node.getNodeName().equals("image")) {
-                if (node.getNodeName().length() > 3) {
-                    try {
-                        URL url = new URL(node.getAttributes().get("target").toString());
-                        String path = url.getFile();
-                    }catch(MalformedURLException ex)
-                    {
-
-                    }
-                }
+                Path p = Paths.get(node.getAttributes().get("target").toString());
+                d.elements.add(new Image("image", p, node.getAttributes()));
             }
         }
     }
