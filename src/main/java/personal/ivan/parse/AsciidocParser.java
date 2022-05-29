@@ -9,17 +9,19 @@ import personal.ivan.domain.Paragraph;
 import personal.ivan.domain.TxtList;
 
 import java.io.FileInputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class AsciidocParser implements IParse {
 
     public static Document d = new Document("document");
-    public Document GetDocument()
-    {
+
+    public Document GetDocument() {
         return d;
     }
 
-    public static void parseAsciidoc(ArrayList<StructuralNode> lst) {
+    public static void parseAsciidoc(ArrayList<StructuralNode> lst) throws MalformedURLException {
         for (var node : lst
         ) {
             System.out.println(node.getNodeName());
@@ -47,6 +49,16 @@ public class AsciidocParser implements IParse {
                 }
             } else if (node.getNodeName().equals("literal")) {
                 d.elements.add(LiteralImpl.ConvertToLiteral(node));
+            } else if (node.getNodeName().equals("image")) {
+                if (node.getNodeName().length() > 3) {
+                    try {
+                        URL url = new URL(node.getAttributes().get("target").toString());
+                        String path = url.getFile();
+                    }catch(MalformedURLException ex)
+                    {
+
+                    }
+                }
             }
         }
     }

@@ -15,9 +15,9 @@ import static org.asciidoctor.Asciidoctor.Factory.create;
 public class AsciidocREadFile implements IReadable {
     public ArrayList<StructuralNode> lst = new ArrayList<>();
 
-    public ArrayList<StructuralNode> readTreeAsciidoc() {
+    public ArrayList<StructuralNode> readTreeAsciidoc(String filename) {
         Asciidoctor asciidoctor = create();
-        Document document = asciidoctor.loadFile(new File("crptascii.adoc"), Options.builder().build());
+        Document document = asciidoctor.loadFile(new File(filename), Options.builder().build());
         for (var block : document.getBlocks()
         ) {
             GetAllBlocks(block);

@@ -6,12 +6,13 @@ import org.asciidoctor.ast.Table;
 import personal.ivan.GlobalConstants;
 import personal.ivan.domain.Link;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TableImpl {
-    public static personal.ivan.domain.Table ConvertToTable(StructuralNode node) {
+    public static personal.ivan.domain.Table ConvertToTable(StructuralNode node) throws MalformedURLException {
         Table t = (Table) node;
         personal.ivan.domain.Table table = new personal.ivan.domain.Table("table");
 

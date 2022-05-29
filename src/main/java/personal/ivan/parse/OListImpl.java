@@ -7,10 +7,11 @@ import org.asciidoctor.jruby.ast.impl.ListItemImpl;
 import personal.ivan.domain.Document;
 import personal.ivan.domain.TxtList;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 public class OListImpl {
-    public static void convertToOlist(StructuralNode node, Document doc) {
+    public static void convertToOlist(StructuralNode node, Document doc) throws MalformedURLException {
         List f = (List) node;
         ArrayList<String> l1 = new ArrayList<>();
         for (var n : f.getItems()

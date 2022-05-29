@@ -6,6 +6,6 @@ public class TreeReadTest {
     @Test void test()
     {
         AsciidocREadFile r = new AsciidocREadFile();
-        r.readTreeAsciidoc();
+        r.readTreeAsciidoc("crptascii.adoc");
     }
 }

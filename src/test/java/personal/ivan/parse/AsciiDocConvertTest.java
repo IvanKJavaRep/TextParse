@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import personal.ivan.process.ProcessDocument;
 import personal.ivan.read.AsciidocREadFile;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 public class AsciiDocConvertTest {
@@ -20,11 +21,11 @@ public class AsciiDocConvertTest {
         pd.process(d, ProcessDocument::processToJson);
     }*/
     @Test
-    void test1() {
+    void test1() throws MalformedURLException {
         AsciidocREadFile reader = new AsciidocREadFile();
         AsciidocParser parser = new AsciidocParser();
         ProcessDocument pd = new ProcessDocument();
-        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc();
+        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("crptascii.adoc");
         parser.parseAsciidoc(lst);
         pd.process(parser.GetDocument(), ProcessDocument::processToJson);
     }

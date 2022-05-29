@@ -12,7 +12,7 @@ public class ListInTableCellTest {
     @Test
     void test() {
         AsciidocREadFile reader = new AsciidocREadFile();
-        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc();
+        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("crptascii.adoc");
         ArrayList<StructuralNode> tables = new ArrayList<>();
         for (var c : lst) {
             if (c instanceof Table) {
