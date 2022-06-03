@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Paragraph extends Element {
-    String name = "Paragraph";
+    public String name = "Paragraph";
     public Paragraph(String text) {
         super(text);
     }
@@ -20,7 +20,7 @@ public class Paragraph extends Element {
             lst1.add(l);
         }
         lst1.remove(0);
-        TxtList lst = new TxtList(lst1, "List");
+        TxtList lst = new TxtList("List");
         return lst;
     }
 }

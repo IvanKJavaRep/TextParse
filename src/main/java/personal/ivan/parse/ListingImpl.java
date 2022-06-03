@@ -12,6 +12,10 @@ import java.util.regex.Pattern;
 public class ListingImpl {
     public static Listing convertToListing(StructuralNode node) {
         Listing listing = new Listing("listing", node.getContent().toString());
+        for(var e : findLinks(node))
+        {
+            listing.addChild(e);
+        }
         return listing;
     }
 

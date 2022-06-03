@@ -15,7 +15,7 @@ public class validateDocumentNameTest {
     void test() {
         Asciidoctor asciidoctor = create();
         Document document = asciidoctor.loadFile(new File("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\crptascii.adoc"), Options.builder().build());
-        Assertions.assertTrue(document.getTitle().toString().length() < 256);
+        Assertions.assertTrue(document.getTitle().length() < 256);
         //get file from resource directory
         /*File inputXmlFile = new File(this.getClass().getResource("/testdoc.adoc").getFile());
         System.out.println(inputXmlFile.getAbsolutePath());*/

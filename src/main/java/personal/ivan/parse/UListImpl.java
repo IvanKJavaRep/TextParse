@@ -8,13 +8,12 @@ import personal.ivan.GlobalConstants;
 import personal.ivan.domain.Link;
 import personal.ivan.domain.TxtList;
 
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UListImpl {
-    public static TxtList ConvertToTxtList(StructuralNode node) throws MalformedURLException {
+    public static TxtList ConvertToTxtList(StructuralNode node){
         List f = (List) node;
         ArrayList<String> l1 = new ArrayList<>();
         for (var n : f.getItems()
@@ -24,10 +23,9 @@ public class UListImpl {
             for (var item : ((ListItemImpl) (li)).getBlocks()) {
                 g.add(item);
             }
-            AsciidocParser.parseAsciidoc(g);
             l1.add(li.getText());
         }
-        TxtList l = new TxtList(l1, "list");
+        TxtList l = new TxtList("list");
         return l;
     }
 

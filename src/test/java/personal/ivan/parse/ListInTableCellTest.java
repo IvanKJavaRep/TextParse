@@ -2,9 +2,9 @@ package personal.ivan.parse;
 
 import org.asciidoctor.ast.StructuralNode;
 import org.asciidoctor.ast.Table;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import personal.ivan.read.AsciidocREadFile;
-import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;
 

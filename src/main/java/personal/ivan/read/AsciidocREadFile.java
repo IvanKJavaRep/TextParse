@@ -47,16 +47,11 @@ public class AsciidocREadFile implements IReadable {
 
     @Override
     public FileInputStream Read(String filename) {
-        /*try {
-            Asciidoctor adoc = Asciidoctor.Factory.create();
-            adoc.convertFile(new File(filename),
-                    OptionsBuilder.options().toFile(new File("crptascii.html"))
-                            .safe(SafeMode.UNSAFE));
-            FileInputStream fstream = new FileInputStream("outputAsci.html");
-            return fstream;
-        } catch (Exception e) {
-            System.out.println(e);
-        }*/
         return null;
+    }
+
+    public Document readDocument(String filename) {
+        Asciidoctor asciidoctor = create();
+        return asciidoctor.loadFile(new File(filename), Options.builder().build());
     }
 }

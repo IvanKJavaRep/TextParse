@@ -1,8 +1,7 @@
 package personal.ivan.domain;
 
-public class Link extends Element{
-    public String name="link";
-    public Link(String text) {
+public class Section extends Element{
+    public Section(String text) {
         super(text);
     }
 

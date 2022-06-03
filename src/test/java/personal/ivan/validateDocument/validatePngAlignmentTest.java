@@ -1,35 +1,22 @@
 package personal.ivan.validateDocument;
 
-import org.asciidoctor.ast.StructuralNode;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import personal.ivan.domain.Image;
 import personal.ivan.parse.AsciidocParser;
-import personal.ivan.process.ProcessDocument;
-import personal.ivan.read.AsciidocREadFile;
-
-import java.io.InvalidObjectException;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
 
 public class validatePngAlignmentTest {
-    @Test void test() throws MalformedURLException, InvalidObjectException {
-        AsciidocREadFile reader = new AsciidocREadFile();
+    @Test void test() {
         AsciidocParser parser = new AsciidocParser();
-        ProcessDocument pd = new ProcessDocument();
-        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\smalldoc.adoc");
-        parser.parseAsciidoc(lst);
-        for (var obj : parser.GetDocument().elements)
+        for (var obj : parser.parseAsciiDocument("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\smalldoc.adoc").children)
         {
-            if(obj instanceof Image) {
-                String s = ((Image) obj).map.get("role").toString();
-                if(s.indexOf("text-center")==-1)
-                {
-                    throw new InvalidObjectException("Invalid role arguement");
-                }
-                if(!(((Image) obj).map.get("title-align").equals("center")
-                        && ((Image) obj).map.get("align").equals("center") &&
-                ((Image) obj).map.get("htmlwidth").toString().matches("\\d+%"))) {
-                    throw new InvalidObjectException("invalid name");
+            for(var el : obj.children) {
+                if (el instanceof Image) {
+                    String s = ((Image) el).map.get("role").toString();
+                    Assertions.assertFalse(s.indexOf("text-center") == -1);
+                    Assertions.assertTrue(((Image) el).map.get("title-align").equals("center"));
+                    Assertions.assertTrue(((Image) el).map.get("align").equals("center"));
+                    Assertions.assertTrue(((Image) el).map.get("htmlwidth").toString().matches("\\d+%"));
                 }
             }
         }
