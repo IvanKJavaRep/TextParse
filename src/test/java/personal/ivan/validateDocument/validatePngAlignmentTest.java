@@ -16,7 +16,7 @@ public class validatePngAlignmentTest {
         AsciidocREadFile reader = new AsciidocREadFile();
         AsciidocParser parser = new AsciidocParser();
         ProcessDocument pd = new ProcessDocument();
-        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("smalldoc.adoc");
+        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\smalldoc.adoc");
         parser.parseAsciidoc(lst);
         for (var obj : parser.GetDocument().elements)
         {

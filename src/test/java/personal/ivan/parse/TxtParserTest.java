@@ -13,7 +13,7 @@ public class TxtParserTest {
         try {
             // объект для чтения
             ReadFile rf = new ReadFile();
-            FileInputStream fstream = rf.Read("input.txt");
+            FileInputStream fstream = rf.Read("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\input.txt");
             // объект для парсинга
             TxtParser parser = new TxtParser();
             Document d = parser.parse(fstream);

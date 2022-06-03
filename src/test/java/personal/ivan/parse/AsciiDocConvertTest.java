@@ -25,7 +25,7 @@ public class AsciiDocConvertTest {
         AsciidocREadFile reader = new AsciidocREadFile();
         AsciidocParser parser = new AsciidocParser();
         ProcessDocument pd = new ProcessDocument();
-        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("crptascii.adoc");
+        ArrayList<StructuralNode> lst = reader.readTreeAsciidoc("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\crptascii.adoc");
         parser.parseAsciidoc(lst);
         pd.process(parser.GetDocument(), ProcessDocument::processToJson);
     }

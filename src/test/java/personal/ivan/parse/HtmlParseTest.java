@@ -11,7 +11,7 @@ public class HtmlParseTest {
         HtmlParser parser = new HtmlParser();
         // объект для процессинга
         ProcessDocument pd = new ProcessDocument();
-        Document d = parser.parse("inputhtml.html");
+        Document d = parser.parse("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\inputhtml.html");
         pd.process(d, ProcessDocument::processToJson);
 
     }
