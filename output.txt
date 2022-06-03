@@ -1,311 +1,54 @@
 {
-  "content" : "document",
+  "content" : "Document",
   "elements" : [ {
-    "content" : "table",
-    "listOfRows" : [ [ "Дата", "Версия документа", "Изменения" ], [ "26.11.2021", "2.0", "Актуализированы методы «<a href=\"#_метод_авторизации_и_получения_авторизующей_cookie\">Метод авторизации и получения авторизующей cookie</a>», «<a href=\"#_метод_получения_информации_по_обращению\">Метод получения информации по обращению</a>», «<a href=\"#_метод_создания_обращения\">Метод создания обращения</a>», «<a href=\"#_метод_добавления_вложения_в_обращение\">Метод добавления вложения в обращение</a>», «<a href=\"#_метод_добавления_комментария_к_обращению\">Метод добавления комментария к обращению</a>», «<a href=\"#_метод_возврата_обращения_в_работу_или_его_закрытия\">Метод возврата обращения в работу или его закрытия</a>»;<br>\nДобавлен новый метод «<a href=\"#_метод_по_получению_информации_по_массиву_обращений_с_условием\">Метод по получению информации по массиву обращений с условием</a>»" ], [ "08.02.2020", "1.0", "Начальная версия" ] ]
+    "content" : "From Wikipedia, the free encyclopedia\n< Wikipedia:Manual of Style\nJump to navigationJump to search\nThis page is about lists in Wikipedia articles. For other information about lists, see Wikipedia:Lists. For stand-alone lists, often called list articles, see Wikipedia:Stand-alone lists.\n\t\nThis guideline is a part of the English Wikipedia's Manual of Style.\nIt is a generally accepted standard that editors should usually attempt to follow, though it is best treated with common sense, and occasional exceptions may apply. Any \"breaking\" or substantive edit to this page should reflect consensus. When in doubt, discuss first on the talk page.\nShortcut\nMOS:LIST\n\tThis page in a nutshell:\nLists present similar information in bulleted, enumerated, or definition format.\nLists may be embedded in articles or may be stand-alone articles\nLists should have a self-explanatory title, and a lead-in description with further explanation as required.\nLists, categories, and navigation templates are synergistic.\nManual of Style (MoS)\n \nContent\nFormatting\nImages\nLayout\nLists\nLegal\nBy topic area\nRelated guidelines\nOverviewContentsTips\nvte\nWikipedia guidelines\nGuidelines listPolicies list\nBehavioral\nAssume good faithConflict of interestCourtesy vanishingDisruptive editingDon't bite the newcomersDon't edit to make a pointEtiquetteDon't game the systemUser pagesOther behavioral guidelinesWMF friendly space policy\nDiscussions\nTalk page guidelinesSignatures\nContent\nBiographies of Living PersonsCiting sourcesExternal linksReliable sources medicineFringe theoriesNon-free contentOffensive materialDon't copy long textsDon't create hoaxesPatent nonsenseOther content guidelines\nEditing\nArticle sizeBe boldEdit summaryUnderstandabilityOther editing guidelines\nOrganization\nCategories, lists, templatesCategorizationDisambiguation\nStyle\nManual of Style contentsliststables\nDeletion\nDeletion processSpeedy keepDeletion guidelines for administrators\nProject content\nProject pages WikiProjectsTemplatesUser pages User boxesShortcutsSubpages\nOther\nNaming conventionsNotability\nvte\nLists are commonly used in Wikipedia to organize information. Lists may be found within the body of a prose article, in appendices such as a \"Publications\" or \"Works\" section, or as a stand-alone article. This guideline explains when and how to use lists appropriately.\n"
   }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Термин, сокращение", "Определение" ], [ "API BPM", "Интерфейс взаимодействия Системы обработки обращений Службы технической поддержки Оператора" ], [ "ИНН", "Идентификационный номер налогоплательщика" ], [ "СТП", "Служба технической поддержки" ] ]
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "Интерфейс взаимодействия Системы обработки обращений СТП Оператора (API BPM) предназначен для интеграции Систем (ServiceDesk, товарно-учетные системы и пр.) Участника с системой обработки обращений Оператора."
+    "content" : "Contents\n1\tTypes of lists\n1.1\tStand-alone list articles\n1.2\tEmbedded lists\n1.2.1\t\"Children\" (i.e., indentation)\n1.2.2\tLists of works and timelines\n1.2.3\tRelated topics (navigational lists)\n1.2.4\tReferences and external links\n1.3\tSpecial names of lists\n2\tPurposes of lists\n2.1\tInformation\n2.2\tNavigation\n2.3\tDevelopment\n2.4\tLists and categories\n3\tList naming\n4\tList layout\n4.1\tUse prose where understood easily\n4.2\tUse good markup\n4.2.1\tImages and lists\n4.3\tUse an unordered list by default\n4.4\tFormat list items consistently\n4.5\tIntroductory material\n4.6\tOrganization\n4.7\tList size\n4.8\tAdding individual items to a list\n4.9\tCategories\n5\tList styles\n5.1\tBulleted lists\n5.2\tUnbulleted lists\n5.3\tNumbered lists\n5.3.1\tOther cases\n5.4\tDescription (definition, association) lists\n5.5\tTables\n5.6\tHorizontal lists\n5.7\tTimelines\n5.8\tLine breaks\n6\tBoilerplate text\n7\tPro and con lists\n8\tSee also\n9\tNotes\nTypes of lists\nWikipedia differentiates between articles that consist primarily of lists (generally called \"lists\" or \"stand alone lists\") and articles that consist primarily of prose (called \"articles\"). Articles are intended to consist primarily of prose, though they may contain some lists.\n"
   }, {
-    "content" : "С помощью API BPM можно:"
+    "content" : "List",
+    "lst" : [ "1\tStand-alone list articles\n", "2\tEmbedded lists\n", "", "1\t\"Children\" (i.e., indentation)\n", "", "2\tLists of works and timelines\n", "", "3\tRelated topics (navigational lists)\n", "", "4\tReferences and external links\n", "3\tSpecial names of lists\n2\tPurposes of lists\n", "1\tInformation\n", "2\tNavigation\n", "3\tDevelopment\n", "4\tLists and categories\n3\tList naming\n4\tList layout\n", "1\tUse prose where understood easily\n", "2\tUse good markup\n", "", "1\tImages and lists\n", "3\tUse an unordered list by default\n", "4\tFormat list items consistently\n", "5\tIntroductory material\n", "6\tOrganization\n", "7\tList size\n", "8\tAdding individual items to a list\n", "9\tCategories\n5\tList styles\n", "1\tBulleted lists\n", "2\tUnbulleted lists\n", "3\tNumbered lists\n", "", "1\tOther cases\n", "4\tDescription (definition, association) lists\n", "5\tTables\n", "6\tHorizontal lists\n", "7\tTimelines\n", "8\tLine breaks\n6\tBoilerplate text\n7\tPro and con lists\n8\tSee also\n9\tNotes\nTypes of lists\nWikipedia differentiates between articles that consist primarily of lists (generally called \"lists\" or \"stand alone lists\") and articles that consist primarily of prose (called \"articles\"). Articles are intended to consist primarily of prose, though they may contain some lists.\n" ]
   }, {
-    "content" : "list",
-    "lst" : [ "направить обращение в СТП;", "получить информацию по обращению;", "внести дополнительную информацию по обращению;", "вернуть обращение в работу или закрыть его." ]
+    "content" : "Stand-alone list articles\n"
   }, {
-    "content" : "Время доступности API BPM 24 часа, 7 дней в неделю с перерывами на техническое обслуживание."
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "По вопросам работы API BPM необходимо обращаться в СТП Оператора по телефону 8-800-222-15-23 или по электронной почте <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>."
+    "content" : "Main page: Wikipedia:Stand-alone lists\nSee also: Wikipedia:Manual of Style/Lists of works\nList articles are encyclopedia pages consisting of a lead section followed by a list (which may or may not be divided by headings). The items on these lists include links to articles in a particular subject area and may include additional information about the listed items. The titles of stand-alone lists typically begin with the type of list it is (List of, Index of, etc.), followed by the article's subject, e.g., List of vegetable oils. They can be organised alphabetically, by subject classification or by topics in a flat or hierarchical structure.\n"
   }, {
-    "content" : "Доступ к API BPM предоставляется Участникам, зарегистрированным на Портале технической поддержки - <a href=\"https://support.crpt.ru\">support.crpt.ru</a>. Тестовый стенд доступен по адресу <a href=\"https://int.support.crpt.ru/\">int.support.crpt.ru</a>."
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "https://support.crpt.ru"
+    "content" : "The title and bullet style, or vertical style, is common for stand-alone lists. These Wikipedia articles follow the Wikipedia:Stand-alone lists style guideline.\n"
   }, {
-    "content" : "https://int.support.crpt.ru/"
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "Для регистрации на Портале технической поддержки необходимо создать обращение в СТП Оператора на электронный почтовый адрес: <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>. В обращении необходимо указать:"
+    "content" : "Embedded lists\nShortcut\nMOS:EMBED\nEmbedded lists are lists used within articles that supplement the article's prose content. They are included in the text-proper or appended, and may be in table format. Wikipedia uses several standard appendices, usually in list format, as well as navigational templates.\n"
   }, {
-    "content" : "list",
-    "lst" : [ "Ф.И.О.;", "должность;", "номер телефона;", "адрес электронной почты." ]
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "list",
-    "lst" : [ "наименование Пользователя;", "ИНН;", "контактные данные представителей, уполномоченных осуществлять взаимодействие с СТП:" ]
+    "content" : "Embedded lists should be used only when appropriate; sometimes the information in a list is better presented as prose. Presenting too much statistical data in list format may contravene policy.\n"
   }, {
-    "content" : "Изменения в API BPM публикуются на сайте <a href=\"https://честныйзнак.рф/\">честныйзнак.рф</a>, а также в информационной рассылке не позднее двух недель до внесения изменений."
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "https://честныйзнак.рф/"
+    "content" : "\"Children\" (i.e., indentation)\nIt can be appropriate to use a list style when the items in a list are \"children\" of the paragraphs that precede them. Such \"children\" logically qualify for indentation beneath their parent description. In this case, indenting the paragraphs in list form may make them easier to read, especially if the paragraphs are very short. The following example works both with and without the bullets:\n"
   }, {
-    "content" : "Узнать об изменениях и ознакомиться с актуальной версией описания методов API BPM можно на сайте <a href=\"https://честныйзнак.рф/\">честныйзнак.рф</a>."
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "https://честныйзнак.рф/"
+    "content" : "Prose\tList\nAt the beginning of the 20th century, New York City was a center for the Beaux-Arts architectural movement, attracting the talents of such great architects as Stanford White and Carrere and Hastings. As better construction and engineering technology became available as the century progressed, New York became the focal point of the competition for the tallest building in the world.\nThe city's skyline has been composed of numerous and varied skyscrapers, many of which are icons of 20th-century architecture. The Flatiron Building, standing 285 ft (87 meters) high, was one of the tallest buildings in the city upon its completion in 1902, made possible by its steel skeleton. It was one of the first buildings designed with a steel framework, and to achieve this height with other construction methods of that time would have been very difficult. The Woolworth Building, a neo-Gothic \"Cathedral of Commerce\" overlooking City Hall, was designed by Cass Gilbert. At 792 feet (241 meters), it became the world's tallest building upon its completion in 1913, an honor it retained until 1930, when it was overtaken by 40 Wall Street. That same year, the Chrysler Building took the lead as the tallest building in the world, scraping the sky at 1,046 feet (319 m). More impressive than its height is the building's design, by William Van Alen. An art deco masterpiece with an exterior crafted of brick, the Chrysler Building continues to be a favorite of New Yorkers to this day.\n"
   }, {
-    "content" : "Метод используется для авторизации на API и получения авторизующей cookie. После получения cookie её необходимо добавлять в headers каждого запроса."
+    "content" : "List",
+    "lst" : [ ]
   }, {
-    "content" : "<strong>URL:</strong> {hostname}/ServiceModel/AuthService.svc/Login"
+    "content" : "At the beginning of the 20th century, New York City was a center for the Beaux-Arts architectural movement, attracting the talents of such great architects as Stanford White and Carrere and Hastings. As better construction and engineering technology became available as the century progressed, New York became the focal point of the competition for the tallest building in the world. The city's striking skyline has been composed of numerous and varied skyscrapers, many of which are icons of 20th-century architecture:\nThe Flatiron Building, standing 285 ft (87 meters) high, was one of the tallest buildings in the city upon its completion in 1902, made possible by its steel skeleton. It was one of the first buildings designed with a steel framework, and to achieve this height with other construction methods of that time would have been very difficult.\nThe Woolworth Building, a neo-Gothic \"Cathedral of Commerce\" overlooking City Hall, was designed by Cass Gilbert. At 792 feet (241 meters), it became the world's tallest building upon its completion in 1913, an honor it retained until 1930, when it was overtaken by 40 Wall Street.\nThat same year, the Chrysler Building took the lead as the tallest building in the world, scraping the sky at 1,046 feet (319 m). More impressive than its height is the building's design, by William Van Alen. An art deco masterpiece with an exterior crafted of brick, the Chrysler Building continues to be a favorite of New Yorkers to this day.\nLists of works and timelines\nSee also: Wikipedia:Manual of Style/Lists of works and Wikipedia:Timeline\nShortcut\nMOS:TIMELINE\nLists of works of individuals or group\n"
   }, {
-    "content" : "<strong>Метод:</strong> POST"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X POST \"{hostname}/ServiceModel/AuthService.svc/Login\""
-  }, {
-    "content" : "<strong>Пример запроса:</strong>"
-  }, {
-    "content" : "literal",
-    "source" : "[source,json]"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"UserName\":\"string\",\n   \"UserPassword\":\"string\"\n}"
-  }, {
-    "content" : "<strong>Параметры запроса:</strong>"
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "login", "string", "+", "Логин", "" ], [ "password", "string", "+", "Пароль", "" ] ]
-  }, {
-    "content" : "<strong>Заголовки ответа:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "Set-Cookie: BPMLOADER=cookie_value; path=/Creatio_application_address; HttpOnly\n\nSet-Cookie: .ASPXAUTH=cookie_value; path=/Creatio_application_address; HttpOnly\n\nSet-Cookie: BPMCSRF=cookie_value; path=/\n\nSet-Cookie: UserName=cookie_value; expires=date_expire_to; path=/; HttpOnly"
-  }, {
-    "content" : "Cookie BPMLOADER, .ASPXAUTH, BPMCSRF нужно добавлять в headers запросов."
-  }, {
-    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"Code\":200,\n   \"Message\":\"string\",\n   \"Exception\":null,\n   \"PasswordChangeUrl\":null,\n   \"RedirectUrl\":null\n}"
-  }, {
-    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"Code\":1,\n   \"Message\":\"Неправильное имя пользователя или пароль\",\n   \"Exception\":{\n      \"HelpLink\":null,\n      \"InnerException\":null,\n      \"Message\":\"Security error\",\n      \"StackTrace\":\"\",\n      \"Type\":\"System.Security.SecurityException\"\n   },\n   \"PasswordChangeUrl\":null,\n   \"RedirectUrl\":null\n}"
-  }, {
-    "content" : "Метод возвращает следующую информацию по обращению:"
-  }, {
-    "content" : "list",
-    "lst" : [ "тема;", "описание;", "приоритет;", "состояние обращения;", "сообщения от специалистов СТП и ссылки на прикрепленные файлы;", "решение по обращению." ]
-  }, {
-    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case/{номер обращения}"
-  }, {
-    "content" : "<strong>Метод:</strong> GET"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X GET \"{hostname}/0/ssp/rest/PublicWebServices/case/SR00000000\"\n-H \"Cookie:&lt;cookie&gt;\""
-  }, {
-    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"ok\":true,\n   \"data\":{\n      \"createdon\":\"22.07.2021 16:18:59\",\n      \"files\":[\n\n      ],\n      \"id\":null,\n      \"messages\":[\n\n      ],\n      \"modifiedon\":null,\n      \"number\":\"SR00000000\",\n      \"priority\":4,\n      \"satisfactioncomment\":\"\",\n      \"satisfactionlevel\":0,\n      \"solution\":\"string\",\n      \"status\":\"Закрыто\",\n      \"statuscode\":5,\n      \"statusdate\":\"25.07.2021 16:47:50\",\n      \"subject\":\"string\",\n      \"symptoms\":\"string\"\n   }\n}"
-  }, {
-    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"error\":\"case not found\"\n}"
-  }, {
-    "content" : "<strong>Параметры ответа:</strong>"
-  }, {
-    "content" : "Возможные значения:"
-  }, {
-    "content" : "list",
-    "lst" : [ "1 - «Обычный»;", "2 - «Средний»;", "3 - «Высокий»;", "4 - «Критический»" ]
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "ok", "boolean", "+", "Результат выполнения запроса", "" ], [ "data", "array", "+", "Идентификатор сообщения", "" ], [ "*createdon", "string", "+", "Дата создания сообщения", "" ], [ "*files", "array", "+", "Массив файлов для решения", "" ], [ "*id", "string", "+", "Идентификатор сообщения", "" ], [ "*messages", "array", "-", "Текст сообщения", "" ], [ "*modifiedon", "string", "-", "Дата изменения обращения", "" ], [ "*number", "string", "+", "Номер обращения", "" ], [ "*priority", "integer", "+", "Приоритет", "Возможные значения:\n\n* 1 - «Обычный»;\n* 2 - «Средний»;\n* 3 - «Высокий»;\n* 4 - «Критический»" ], [ "*satisfactioncomment", "string", "+", "Комментарий к оценке", "" ], [ "*satisfactionlevel", "integer", "+", "Уровень удовлетворенности (от 1 до 5)", "" ], [ "*solution", "string", "+", "Решение", "" ], [ "*status", "string", "+", "Статус обращения", "Возможные значения статусов обращения см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»" ], [ "*statuscode", "integer", "+", "Код статуса", "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»" ], [ "*statusdate", "string", "+", "Дата последнего статуса", "" ], [ "*subject", "string", "+", "Тема обращения", "" ], [ "*symptoms", "string", "+", "Описание проблемы, с которой обратился Участник", "" ], [ "error", "string", "-", "Описание ошибки", "Появляется только при неуспешном выполнении запроса" ] ]
-  }, {
-    "content" : "Метод возвращает номер созданного обращения."
-  }, {
-    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case"
-  }, {
-    "content" : "<strong>Метод:</strong> POST"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/case\"\n-H \"Cookie:&lt;cookie&gt;\""
-  }, {
-    "content" : "<strong>Пример запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"subject\":\"Проблема с авторизацией\",\n   \"symptoms\":\"Не выполняется авторизация с помощью УКЭП\"\n}"
-  }, {
-    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"ok\":true,\n   \"data\":\"SR00000000\"\n}"
-  }, {
-    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"error\":\"case not found\",\n   \"ok\":false\n}"
-  }, {
-    "content" : "<strong>Параметры ответа:</strong>"
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "ok", "boolean", "+", "Результат выполнения запроса", "" ], [ "data", "string", "+", "Номер обращения", "" ], [ "error", "string", "-", "Описание ошибки", "Появляется только при неуспешном выполнении запроса" ] ]
-  }, {
-    "content" : "Метод предназначен для добавления вложения в обращение (скриншоты, файлы и т.д.)."
-  }, {
-    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/file"
-  }, {
-    "content" : "<strong>Метод:</strong> POST"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/file?filename=case.xlsx&amp;number=SR00000000&amp;totallength=35000\"\n-H \"Cookie:&lt;cookie&gt;\""
-  }, {
-    "content" : "<strong>Параметры запроса:</strong>"
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "filename", "string", "+", "Название файла", "" ], [ "number", "string", "+", "Номер обращения", "" ], [ "totallength", "integer", "+", "Размер файла", "" ] ]
-  }, {
-    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"ok\":true\n}"
-  }, {
-    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "\"File not found\""
-  }, {
-    "content" : "<strong>Параметры ответа:</strong>"
-  }, {
-    "content" : "Возможные значения:"
-  }, {
-    "content" : "list",
-    "lst" : [ "«File not found» (Файл не найден);", "«Exceeded the maximum number of request per minute» (Превышено максимальное количество запросов в минуту)" ]
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "ok", "boolean", "-", "Результат выполнения запроса", "" ], [ "error_message", "string", "-", "Сообщение об ошибке", "Возможные значения:\n\n* «File not found» (Файл не найден);\n* «Exceeded the maximum number of request per minute» (Превышено максимальное количество запросов в минуту)" ] ]
-  }, {
-    "content" : "Метод позволяет добавить новый комментарий к обращению от оператора СТП."
-  }, {
-    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/message"
-  }, {
-    "content" : "<strong>Метод:</strong> POST"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/message\"\n-H \"Cookie:&lt;cookie&gt;\""
-  }, {
-    "content" : "<strong>Пример запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"number\":\"SR00000000\",\n   \"text\":\"Проблема решена\"\n}"
-  }, {
-    "content" : "<strong>Параметры запроса:</strong>"
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "number", "string", "+", "Номер обращения", "" ], [ "text", "string", "+", "Текст сообщения", "" ] ]
-  }, {
-    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"ok\":true,\n   \"data\":\"string\"\n}"
-  }, {
-    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"error\":\"number data is required\",\n   \"ok\":false\n}"
-  }, {
-    "content" : "<strong>Параметры ответа:</strong>"
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "ok", "boolean", "+", "Результат выполнения запроса", "" ], [ "data", "string", "+", "Идентификатор сообщения", "" ], [ "error", "string", "-", "Описание ошибки", "Появляется только при неуспешном выполнении запроса" ] ]
-  }, {
-    "content" : "Метод позволяет вернуть обращение в работу или закрыть его."
-  }, {
-    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/update_case"
-  }, {
-    "content" : "<strong>Метод:</strong> POST"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/update_case\"\n-H \"Cookie:&lt;cookie&gt;\""
-  }, {
-    "content" : "<strong>Пример запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"number\":\"SR00000000\",\n   \"status\":\"close\",\n   \"statuscode\":\"5\",\n   \"satisfactionlevel\":\"3\",\n   \"satisfactioncomment\":\"string\",\n   \"statusdate\":\"13.06.2021 11:59:06\"\n}"
-  }, {
-    "content" : "<strong>Параметры запроса:</strong>"
-  }, {
-    "content" : "Возможные значения:"
-  }, {
-    "content" : "list",
-    "lst" : [ "«close» («Закрыто») - обращение закрыто;", "«reopen» («Переоткрыто») - обращение переоткрыто. Доступно для обращения в статусе «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)" ]
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "number", "string", "+", "Номер обращения", "" ], [ "status", "string", "+", "Статус обращения", "Возможные значения:\n\n* «close» («Закрыто») - обращение закрыто;\n* «reopen» («Переоткрыто») - обращение переоткрыто. Доступно для обращения в статусе «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)" ], [ "satisfactionlevel", "integer", "-", "Уровень удовлетворенности решением обращения", "Доступен для статуса «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)" ], [ "satisfactioncomment", "string", "-", "Комментарий к оценке решения", "Доступен для статуса «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)" ], [ "statuscode", "integer", "-", "Код статуса", "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»" ], [ "statusdate", "string", "-", "Дата последнего статуса", "" ] ]
-  }, {
-    "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"ok\":true,\n   \"data\":\"SR00000000\"\n}"
-  }, {
-    "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"error\":\"number data is required\",\n   \"ok\":false\n}"
-  }, {
-    "content" : "<strong>Параметры ответа:</strong>"
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "data", "string", "+", "Номер обращения", "" ], [ "error", "string", "-", "Описание ошибки", "Появляется только при неуспешном выполнении запроса" ] ]
-  }, {
-    "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/cases"
-  }, {
-    "content" : "<strong>Метод:</strong> POST"
-  }, {
-    "content" : "<strong>Пример строки запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/cases\"\n-H \"Cookie:&lt;cookie&gt;\""
-  }, {
-    "content" : "<strong>Пример запроса:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"numbers\":[\"SR00000000\"],\n   \"statuscode\": [1, 2],\n   \"count\":\"2\",\n   \"skip\":\"0\",\n   \"from\":\"06.04.2021 11:17:05\",\n   \"to\":\"06.04.2021 11:17:21\",\n   \"search_line\":\"string\",\n   \"availability_level\":\"1\",\n   \"sort\":[\"modifiedon\", \"statuscode\"]\n}"
-  }, {
-    "content" : "<strong>Параметры запроса:</strong>"
-  }, {
-    "content" : "Возможные значения:"
-  }, {
-    "content" : "list",
-    "lst" : [ "0 - возвращает только созданные пользователем;", "1 - возвращает все доступные" ]
-  }, {
-    "content" : "Возможные значения:"
-  }, {
-    "content" : "list",
-    "lst" : [ "statuscode - первичная сортировка по статусам;", "modifiedon - сортировка по дате изменения" ]
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "numbers", "string", "-", "Фильтр по номерам обращений", "Массив с одним значением может указываться без квадратных скобок" ], [ "statuscode", "integer", "-", "Фильтр по кодам статусов", "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»" ], [ "count", "integer", "-", "Количество возвращаемых объектов", "" ], [ "skip", "string", "-", "Количество игнорируемых объектов от первоначальной выборки", "" ], [ "from", "string", "-", "Начало периода для фильтра по полю «createdon» («Дата создания сообщения»)", "" ], [ "to", "string", "-", "Конец периода для фильтра по полю «createdon» («Дата создания сообщения»)", "" ], [ "search_line", "string", "-", "Строка для поиска в теме и описании", "" ], [ "availability_level", "string", "-", "Выбор обращений", "Возможные значения:\n\n* 0 - возвращает только созданные пользователем;\n* 1 - возвращает все доступные" ], [ "sort", "string", "-", "Сортировка", "Возможные значения:\n\n* statuscode - первичная сортировка по статусам;\n* modifiedon - сортировка по дате изменения" ] ]
-  }, {
-    "content" : "Примечание: в запросе должен быть обязательно заполнен один из параметров."
-  }, {
-    "content" : "<strong>Пример ответа:</strong>"
-  }, {
-    "content" : "listing",
-    "source" : "{\n   \"ok\":true,\n   \"count\":1,\n   \"data\":[\n      {\n         \"createdon\":\"06.04.2021 11:17:21\",\n         \"files\":[\n\n         ],\n         \"id\":\"00000001\",\n         \"messages\":[\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"06.04.2021 11:17:24\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000002\",\n               \"text\":\"string\",\n               \"type\":null\n            },\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"07.04.2021 14:45:18\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000003\",\n               \"text\":\"string\",\n               \"type\":null\n            },\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"07.04.2021 14:45:24\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000004\",\n               \"text\":\"string\",\n               \"type\":null\n            }\n         ],\n         \"modifiedon\":\"07.04.2021 14:45:18\",\n         \"number\":\"SR0000000\",\n         \"priority\":4,\n         \"satisfactioncomment\":\"\",\n         \"satisfactionlevel\":0,\n         \"solution\":\"string\",\n         \"status\":\"Предоставлено решение\",\n         \"statuscode\":2,\n         \"statusdate\":\"07.04.2021 14:45:13\",\n         \"subject\":\"string\",\n         \"symptoms\":\"string\"\n      }\n   ],\n   \"pagecount\":1\n}"
-  }, {
-    "content" : "<strong>Параметры ответа:</strong>"
-  }, {
-    "content" : "Возможные значения:"
-  }, {
-    "content" : "list",
-    "lst" : [ "1 - «Обычный»;", "2 - «Средний»;", "3 - «Высокий»;", "4 - «Критический»" ]
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Параметр", "Тип", "Обяз.", "Описание", "Комментарий" ], [ "ok", "boolean", "+", "Результат выполнения запроса", "" ], [ "count", "integer", "-", "Количество возвращаемых объектов", "" ], [ "data", "string", "-", "Идентификатор обращения", "" ], [ "*createdon", "string", "-", "Дата создания обращения", "" ], [ "*files", "array", "-", "Массив файлов для решения", "" ], [ "*id", "string", "-", "Идентификатор обращения", "" ], [ "*messages", "string", "-", "Массив данных переписки", "" ], [ "*modifiedon", "string", "-", "Дата изменения обращения", "" ], [ "*number", "string", "-", "Номер обращения", "" ], [ "*priority", "integer", "-", "Приоритет", "Возможные значения:\n\n* 1 - «Обычный»;\n* 2 - «Средний»;\n* 3 - «Высокий»;\n* 4 - «Критический»" ], [ "*satisfactioncomment", "string", "-", "Комментарий к оценке", "" ], [ "*satisfactionlevel", "integer", "-", "Уровень удовлетворенности (от 1 до 5)", "" ], [ "*solution", "string", "-", "Решение", "" ], [ "*status", "string", "-", "Статус обращения", "Возможные значения статусов обращения см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»" ], [ "*statuscode", "integer", "-", "Код статуса", "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»" ], [ "*statusdate", "string", "-", "Дата последнего статуса", "" ], [ "*subject", "string", "-", "Тема обращения", "" ], [ "*symptoms", "string", "-", "Описание проблемы, с которой обратился Участник", "" ], [ "pagecount", "integer", "-", "Количество обращений", "" ] ]
-  }, {
-    "content" : "table",
-    "listOfRows" : [ [ "Код статуса («statuscode»)", "Статус обращения («status»)" ], [ "1", "Требует Вашего внимания" ], [ "2", "Предоставлено решение" ], [ "3", "В работе" ], [ "4", "Открыто" ], [ "5", "Закрыто / close" ], [ "6", "Переоткрыто / reopen" ] ]
+    "content" : "List",
+    "lst" : [ ]
   } ]
 }

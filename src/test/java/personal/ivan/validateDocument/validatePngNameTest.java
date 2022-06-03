@@ -14,11 +14,10 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class validatePngName {
+public class validatePngNameTest {
     @Test void test() throws MalformedURLException, InvalidObjectException {
         /*File inputXmlFile = new File(this.getClass().getResource("/testdoc.adoc").getFile());
         System.out.println(inputXmlFile.getAbsolutePath());*/
-
         AsciidocREadFile reader = new AsciidocREadFile();
         AsciidocParser parser = new AsciidocParser();
         ProcessDocument pd = new ProcessDocument();
@@ -26,13 +25,14 @@ public class validatePngName {
         parser.parseAsciidoc(lst);
         for (var obj : parser.GetDocument().elements)
         {
-            Pattern pat = Pattern.compile(GlobalConstants.pngRegexp);
-            String s =((Image) obj).path.getFileName().toString();
-            Matcher mat = pat.matcher(s);
-            if(!(mat.find()||mat.group().length()==s.length())) {
-                throw new InvalidObjectException("invalid name");
+            if(obj instanceof Image) {
+                Pattern pat = Pattern.compile(GlobalConstants.pngRegexp);
+                String s = ((Image) obj).path.getFileName().toString();
+                Matcher mat = pat.matcher(s);
+                if (!(mat.find() && mat.group().length() == s.length())) {
+                    throw new InvalidObjectException("invalid name");
+                }
             }
         }
-        //pd.process(parser.GetDocument(), ProcessDocument::processToJson);
     }
 }

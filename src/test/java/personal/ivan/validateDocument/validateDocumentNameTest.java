@@ -10,13 +10,12 @@ import java.io.File;
 
 import static org.asciidoctor.Asciidoctor.Factory.create;
 
-public class validateDocumentName {
+public class validateDocumentNameTest {
     @Test
     void test() {
         Asciidoctor asciidoctor = create();
         Document document = asciidoctor.loadFile(new File("crptascii.adoc"), Options.builder().build());
         Assertions.assertTrue(document.getTitle().toString().length() < 256);
-
         //get file from resource directory
         /*File inputXmlFile = new File(this.getClass().getResource("/testdoc.adoc").getFile());
         System.out.println(inputXmlFile.getAbsolutePath());*/
