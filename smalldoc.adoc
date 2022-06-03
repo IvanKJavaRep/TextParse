@@ -1,3 +1,4 @@
 == Схемы обмена документов с методами API ЭДО Лайт
 .Схема обмена УПД (УПДи) ДОП
-image::butterfly_clip_art_blue_butterfly.png[htmlwidth=100%]
+[.right.text-center]
+image::butterfly_clip_art_blue_butterfly.png[htmlwidth=100%, align="center"]
