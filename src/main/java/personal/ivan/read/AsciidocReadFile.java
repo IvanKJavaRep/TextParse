@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import static org.asciidoctor.Asciidoctor.Factory.create;
 
-public class AsciidocREadFile implements IReadable {
+public class AsciidocReadFile implements IReadable {
     public ArrayList<StructuralNode> lst = new ArrayList<>();
 
     public ArrayList<StructuralNode> readTreeAsciidoc(String filename) {

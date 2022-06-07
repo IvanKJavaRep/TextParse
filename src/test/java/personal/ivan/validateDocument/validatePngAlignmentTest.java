@@ -8,7 +8,7 @@ import personal.ivan.parse.AsciidocParser;
 public class validatePngAlignmentTest {
     @Test void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\smalldoc.adoc").children)
+        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("smalldoc.adoc").getPath()).children)
         {
             for(var el : obj.children) {
                 if (el instanceof Image) {

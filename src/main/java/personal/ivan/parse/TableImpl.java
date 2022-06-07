@@ -10,34 +10,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TableImpl {
-    public static personal.ivan.domain.Table ConvertToTable(StructuralNode node)  {
-        //Table t = (Table) node;
+    public static personal.ivan.domain.Table ConvertToTable(StructuralNode node) {
         personal.ivan.domain.Table table = new personal.ivan.domain.Table("table");
-
-       /* for (var el : t.getHeader()) {
-            ArrayList<String> elements = new ArrayList<>();
-            for (var cell : el.getCells()) {
-                elements.add(cell.getText());
-                findLinks(cell);
-                var document = cell.getInnerDocument();
-                if (document != null) {
-                    FindListsRecur.FindLists(document);
-                }
-            }
-            table.listOfRows.add(elements);
-        }
-        for (var el : t.getBody()) {
-            ArrayList<String> elements = new ArrayList<>();
-            for (var cell : el.getCells()) {
-                elements.add(cell.getText());
-                findLinks(cell);
-                var document = cell.getInnerDocument();
-                if (document != null) {
-                    FindListsRecur.FindLists(document);
-                }
-            }
-            table.listOfRows.add(elements);
-        }*/
+        table.properties = node.getAttributes();
         return table;
     }
 

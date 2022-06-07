@@ -5,15 +5,35 @@
     "children" : [ {
       "content" : "table",
       "children" : [ ],
+      "properties" : {
+        "3" : null,
+        "tablepcwidth" : 100,
+        "rowcount" : 3,
+        "header-option" : "",
+        "colcount" : 3,
+        "style" : "table",
+        "cols" : "30,15,55"
+      },
       "listOfRows" : [ ]
-    }, null, null ]
+    }, null, null ],
+    "properties" : { }
   }, {
     "content" : "section",
     "children" : [ {
       "content" : "table",
       "children" : [ ],
+      "properties" : {
+        "3" : null,
+        "tablepcwidth" : 100,
+        "rowcount" : 4,
+        "header-option" : "",
+        "colcount" : 2,
+        "style" : "table",
+        "cols" : "50,50"
+      },
       "listOfRows" : [ ]
-    }, null, null ]
+    }, null, null ],
+    "properties" : { }
   }, {
     "content" : "section",
     "children" : [ {
@@ -21,36 +41,46 @@
       "children" : [ {
         "content" : "Интерфейс взаимодействия Системы обработки обращений СТП Оператора (API BPM) предназначен для интеграции Систем (ServiceDesk, товарно-учетные системы и пр.) Участника с системой обработки обращений Оператора.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "С помощью API BPM можно:",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "ulist",
         "children" : [ {
           "content" : "направить обращение в СТП;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "получить информацию по обращению;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "внести дополнительную информацию по обращению;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "вернуть обращение в работу или закрыть его.",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         } ],
+        "properties" : { },
         "lst" : null
       }, {
         "content" : "Время доступности API BPM 24 часа, 7 дней в неделю с перерывами на техническое обслуживание.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "По вопросам работы API BPM необходимо обращаться в СТП Оператора по телефону 8-800-222-15-23 или по электронной почте <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
@@ -58,47 +88,61 @@
         "children" : [ {
           "content" : "https://support.crpt.ru",
           "children" : [ ],
+          "properties" : { },
           "name" : "link"
         }, {
           "content" : "https://int.support.crpt.ru/",
           "children" : [ ],
+          "properties" : { },
           "name" : "link"
         } ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "Для регистрации на Портале технической поддержки необходимо создать обращение в СТП Оператора на электронный почтовый адрес: <a href=\"mailto:support@crpt.ru\">support@crpt.ru</a>. В обращении необходимо указать:",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "ulist",
         "children" : [ {
           "content" : "наименование Пользователя;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "ИНН;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "контактные данные представителей, уполномоченных осуществлять взаимодействие с СТП:",
           "children" : [ {
             "content" : "ulist",
             "children" : [ {
               "content" : "Ф.И.О.;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "должность;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "номер телефона;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "адрес электронной почты.",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         } ],
+        "properties" : { },
         "lst" : null
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
@@ -106,19 +150,25 @@
         "children" : [ {
           "content" : "https://честныйзнак.рф/",
           "children" : [ ],
+          "properties" : { },
           "name" : "link"
         } ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "Узнать об изменениях и ознакомиться с актуальной версией описания методов API BPM можно на сайте <a href=\"https://честныйзнак.рф/\">честныйзнак.рф</a>.",
         "children" : [ {
           "content" : "https://честныйзнак.рф/",
           "children" : [ ],
+          "properties" : { },
           "name" : "link"
         } ],
+        "properties" : { },
         "name" : "Paragraph"
-      }, null, null ]
-    } ]
+      }, null, null ],
+      "properties" : { }
+    } ],
+    "properties" : { }
   }, {
     "content" : "section",
     "children" : [ {
@@ -126,135 +176,209 @@
       "children" : [ {
         "content" : "Метод используется для авторизации на API и получения авторизующей cookie. После получения cookie её необходимо добавлять в headers каждого запроса.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>URL:</strong> {hostname}/ServiceModel/AuthService.svc/Login",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> POST",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X POST \"{hostname}/ServiceModel/AuthService.svc/Login\""
       }, {
         "content" : "<strong>Пример запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "literal",
         "children" : [ ],
+        "properties" : { },
         "source" : "[source,json]"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "style" : "listing"
+        },
         "source" : "{\n   \"UserName\":\"string\",\n   \"UserPassword\":\"string\"\n}"
       }, {
         "content" : "<strong>Параметры запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
         "children" : [ ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 3,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "15,10,10,20,45"
+        },
         "listOfRows" : [ ]
       }, {
         "content" : "<strong>Заголовки ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "Set-Cookie: BPMLOADER=cookie_value; path=/Creatio_application_address; HttpOnly\n\nSet-Cookie: .ASPXAUTH=cookie_value; path=/Creatio_application_address; HttpOnly\n\nSet-Cookie: BPMCSRF=cookie_value; path=/\n\nSet-Cookie: UserName=cookie_value; expires=date_expire_to; path=/; HttpOnly"
       }, {
         "content" : "Cookie BPMLOADER, .ASPXAUTH, BPMCSRF нужно добавлять в headers запросов.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"Code\":200,\n   \"Message\":\"string\",\n   \"Exception\":null,\n   \"PasswordChangeUrl\":null,\n   \"RedirectUrl\":null\n}"
       }, {
         "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"Code\":1,\n   \"Message\":\"Неправильное имя пользователя или пароль\",\n   \"Exception\":{\n      \"HelpLink\":null,\n      \"InnerException\":null,\n      \"Message\":\"Security error\",\n      \"StackTrace\":\"\",\n      \"Type\":\"System.Security.SecurityException\"\n   },\n   \"PasswordChangeUrl\":null,\n   \"RedirectUrl\":null\n}"
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
         "content" : "Метод возвращает следующую информацию по обращению:",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "ulist",
         "children" : [ {
           "content" : "тема;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "описание;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "приоритет;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "состояние обращения;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "сообщения от специалистов СТП и ссылки на прикрепленные файлы;",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         }, {
           "content" : "решение по обращению.",
-          "children" : [ ]
+          "children" : [ ],
+          "properties" : { }
         } ],
+        "properties" : { },
         "lst" : null
       }, {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case/{номер обращения}",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> GET",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X GET \"{hostname}/0/ssp/rest/PublicWebServices/case/SR00000000\"\n-H \"Cookie:&lt;cookie&gt;\""
       }, {
         "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"ok\":true,\n   \"data\":{\n      \"createdon\":\"22.07.2021 16:18:59\",\n      \"files\":[\n\n      ],\n      \"id\":null,\n      \"messages\":[\n\n      ],\n      \"modifiedon\":null,\n      \"number\":\"SR00000000\",\n      \"priority\":4,\n      \"satisfactioncomment\":\"\",\n      \"satisfactionlevel\":0,\n      \"solution\":\"string\",\n      \"status\":\"Закрыто\",\n      \"statuscode\":5,\n      \"statusdate\":\"25.07.2021 16:47:50\",\n      \"subject\":\"string\",\n      \"symptoms\":\"string\"\n   }\n}"
       }, {
         "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"error\":\"case not found\"\n}"
       }, {
         "content" : "<strong>Параметры ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
@@ -263,131 +387,219 @@
           "children" : [ {
             "content" : "Возможные значения:",
             "children" : [ ],
+            "properties" : { },
             "name" : "Paragraph"
           }, {
             "content" : "ulist",
             "children" : [ {
               "content" : "1 - «Обычный»;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "2 - «Средний»;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "3 - «Высокий»;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "4 - «Критический»",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         } ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 19,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "25,10,10,25,30"
+        },
         "listOfRows" : [ ]
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
         "content" : "Метод возвращает номер созданного обращения.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> POST",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/case\"\n-H \"Cookie:&lt;cookie&gt;\""
       }, {
         "content" : "<strong>Пример запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"subject\":\"Проблема с авторизацией\",\n   \"symptoms\":\"Не выполняется авторизация с помощью УКЭП\"\n}"
       }, {
         "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"ok\":true,\n   \"data\":\"SR00000000\"\n}"
       }, {
         "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"error\":\"case not found\",\n   \"ok\":false\n}"
       }, {
         "content" : "<strong>Параметры ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
         "children" : [ ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 4,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "15,10,10,20,45"
+        },
         "listOfRows" : [ ]
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
         "content" : "Метод предназначен для добавления вложения в обращение (скриншоты, файлы и т.д.).",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/file",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> POST",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/file?filename=case.xlsx&amp;number=SR00000000&amp;totallength=35000\"\n-H \"Cookie:&lt;cookie&gt;\""
       }, {
         "content" : "<strong>Параметры запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
         "children" : [ ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 4,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "15,10,10,20,45"
+        },
         "listOfRows" : [ ]
       }, {
         "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"ok\":true\n}"
       }, {
         "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "\"File not found\""
       }, {
         "content" : "<strong>Параметры ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
@@ -396,117 +608,198 @@
           "children" : [ {
             "content" : "Возможные значения:",
             "children" : [ ],
+            "properties" : { },
             "name" : "Paragraph"
           }, {
             "content" : "ulist",
             "children" : [ {
               "content" : "«File not found» (Файл не найден);",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "«Exceeded the maximum number of request per minute» (Превышено максимальное количество запросов в минуту)",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         } ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 3,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "20,10,10,20,40"
+        },
         "listOfRows" : [ ]
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
         "content" : "Метод позволяет добавить новый комментарий к обращению от оператора СТП.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/message",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> POST",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/message\"\n-H \"Cookie:&lt;cookie&gt;\""
       }, {
         "content" : "<strong>Пример запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"number\":\"SR00000000\",\n   \"text\":\"Проблема решена\"\n}"
       }, {
         "content" : "<strong>Параметры запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
         "children" : [ ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 3,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "15,10,10,20,45"
+        },
         "listOfRows" : [ ]
       }, {
         "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"ok\":true,\n   \"data\":\"string\"\n}"
       }, {
         "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"error\":\"number data is required\",\n   \"ok\":false\n}"
       }, {
         "content" : "<strong>Параметры ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
         "children" : [ ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 4,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "15,10,10,20,45"
+        },
         "listOfRows" : [ ]
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
         "content" : "Метод позволяет вернуть обращение в работу или закрыть его.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/update_case",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> POST",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/update_case\"\n-H \"Cookie:&lt;cookie&gt;\""
       }, {
         "content" : "<strong>Пример запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"number\":\"SR00000000\",\n   \"status\":\"close\",\n   \"statuscode\":\"5\",\n   \"satisfactionlevel\":\"3\",\n   \"satisfactioncomment\":\"string\",\n   \"statusdate\":\"13.06.2021 11:59:06\"\n}"
       }, {
         "content" : "<strong>Параметры запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
@@ -515,74 +808,128 @@
           "children" : [ {
             "content" : "Возможные значения:",
             "children" : [ ],
+            "properties" : { },
             "name" : "Paragraph"
           }, {
             "content" : "ulist",
             "children" : [ {
               "content" : "«close» («Закрыто») - обращение закрыто;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "«reopen» («Переоткрыто») - обращение переоткрыто. Доступно для обращения в статусе «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         } ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 7,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "25,10,10,25,30"
+        },
         "listOfRows" : [ ]
       }, {
         "content" : "<strong>Пример ответа при успешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"ok\":true,\n   \"data\":\"SR00000000\"\n}"
       }, {
         "content" : "<strong>Пример ответа при неуспешном выполнении запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"error\":\"number data is required\",\n   \"ok\":false\n}"
       }, {
         "content" : "<strong>Параметры ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
         "children" : [ ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 3,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "15,10,10,20,45"
+        },
         "listOfRows" : [ ]
-      } ]
+      } ],
+      "properties" : { }
     }, {
       "content" : "section",
       "children" : [ {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/cases",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Метод:</strong> POST",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример строки запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "style" : "source"
+        },
         "source" : "curl -X POST \"{hostname}/0/ssp/rest/PublicWebServices/cases\"\n-H \"Cookie:&lt;cookie&gt;\""
       }, {
         "content" : "<strong>Пример запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"numbers\":[\"SR00000000\"],\n   \"statuscode\": [1, 2],\n   \"count\":\"2\",\n   \"skip\":\"0\",\n   \"from\":\"06.04.2021 11:17:05\",\n   \"to\":\"06.04.2021 11:17:21\",\n   \"search_line\":\"string\",\n   \"availability_level\":\"1\",\n   \"sort\":[\"modifiedon\", \"statuscode\"]\n}"
       }, {
         "content" : "<strong>Параметры запроса:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
@@ -591,52 +938,80 @@
           "children" : [ {
             "content" : "Возможные значения:",
             "children" : [ ],
+            "properties" : { },
             "name" : "Paragraph"
           }, {
             "content" : "ulist",
             "children" : [ {
               "content" : "0 - возвращает только созданные пользователем;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "1 - возвращает все доступные",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         }, {
           "content" : "Возможные значения:\n\n* statuscode - первичная сортировка по статусам;\n* modifiedon - сортировка по дате изменения",
           "children" : [ {
             "content" : "Возможные значения:",
             "children" : [ ],
+            "properties" : { },
             "name" : "Paragraph"
           }, {
             "content" : "ulist",
             "children" : [ {
               "content" : "statuscode - первичная сортировка по статусам;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "modifiedon - сортировка по дате изменения",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         } ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 10,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "20,10,10,25,35"
+        },
         "listOfRows" : [ ]
       }, {
         "content" : "Примечание: в запросе должен быть обязательно заполнен один из параметров.",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "<strong>Пример ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "listing",
         "children" : [ ],
+        "properties" : {
+          "1" : "source",
+          "2" : "json",
+          "style" : "source",
+          "language" : "json"
+        },
         "source" : "{\n   \"ok\":true,\n   \"count\":1,\n   \"data\":[\n      {\n         \"createdon\":\"06.04.2021 11:17:21\",\n         \"files\":[\n\n         ],\n         \"id\":\"00000001\",\n         \"messages\":[\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"06.04.2021 11:17:24\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000002\",\n               \"text\":\"string\",\n               \"type\":null\n            },\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"07.04.2021 14:45:18\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000003\",\n               \"text\":\"string\",\n               \"type\":null\n            },\n            {\n               \"contact\":\"string\",\n               \"createdon\":\"07.04.2021 14:45:24\",\n               \"files\":[\n\n               ],\n               \"id\":\"00000004\",\n               \"text\":\"string\",\n               \"type\":null\n            }\n         ],\n         \"modifiedon\":\"07.04.2021 14:45:18\",\n         \"number\":\"SR0000000\",\n         \"priority\":4,\n         \"satisfactioncomment\":\"\",\n         \"satisfactionlevel\":0,\n         \"solution\":\"string\",\n         \"status\":\"Предоставлено решение\",\n         \"statuscode\":2,\n         \"statusdate\":\"07.04.2021 14:45:13\",\n         \"subject\":\"string\",\n         \"symptoms\":\"string\"\n      }\n   ],\n   \"pagecount\":1\n}"
       }, {
         "content" : "<strong>Параметры ответа:</strong>",
         "children" : [ ],
+        "properties" : { },
         "name" : "Paragraph"
       }, {
         "content" : "table",
@@ -645,35 +1020,64 @@
           "children" : [ {
             "content" : "Возможные значения:",
             "children" : [ ],
+            "properties" : { },
             "name" : "Paragraph"
           }, {
             "content" : "ulist",
             "children" : [ {
               "content" : "1 - «Обычный»;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "2 - «Средний»;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "3 - «Высокий»;",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             }, {
               "content" : "4 - «Критический»",
-              "children" : [ ]
+              "children" : [ ],
+              "properties" : { }
             } ],
+            "properties" : { },
             "lst" : null
-          } ]
+          } ],
+          "properties" : { }
         } ],
+        "properties" : {
+          "3" : null,
+          "tablepcwidth" : 100,
+          "rowcount" : 20,
+          "header-option" : "",
+          "colcount" : 5,
+          "style" : "table",
+          "cols" : "25,10,10,25,30"
+        },
         "listOfRows" : [ ]
-      }, null, null ]
-    } ]
+      }, null, null ],
+      "properties" : { }
+    } ],
+    "properties" : { }
   }, {
     "content" : "section",
     "children" : [ {
       "content" : "table",
       "children" : [ ],
+      "properties" : {
+        "3" : null,
+        "tablepcwidth" : 100,
+        "rowcount" : 7,
+        "header-option" : "",
+        "colcount" : 2,
+        "style" : "table",
+        "cols" : "35,65"
+      },
       "listOfRows" : [ ]
-    } ]
+    } ],
+    "properties" : { }
   } ],
+  "properties" : { },
   "elements" : [ ]
 }

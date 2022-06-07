@@ -8,7 +8,7 @@ import org.asciidoctor.jruby.ast.impl.ListItemImpl;
 import personal.ivan.domain.Cell;
 import personal.ivan.domain.Document;
 import personal.ivan.domain.*;
-import personal.ivan.read.AsciidocREadFile;
+import personal.ivan.read.AsciidocReadFile;
 
 import java.io.FileInputStream;
 import java.nio.file.Path;
@@ -23,7 +23,7 @@ public class AsciidocParser implements IParse {
     }
 
     public Document parseAsciiDocument(String file) {
-        AsciidocREadFile reader = new AsciidocREadFile();
+        AsciidocReadFile reader = new AsciidocReadFile();
         org.asciidoctor.ast.Document asciiDoc = reader.readDocument(file);
         Document resultDoc = new Document(asciiDoc.getNodeName());
         java.util.List<StructuralNode> nodes = asciiDoc.getBlocks();
@@ -34,7 +34,7 @@ public class AsciidocParser implements IParse {
     }
 
     public Element parseStructuralNode(StructuralNode stNode) {
-        System.out.println(stNode.getNodeName());
+        //System.out.println(stNode.getNodeName());
         if (stNode instanceof org.asciidoctor.ast.List) {
             TxtList txtlst = new TxtList(stNode.getNodeName());
             List f = (List) stNode;

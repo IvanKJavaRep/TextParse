@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 public class ParagraphImpl {
     public static Paragraph ConvertToParagraph( StructuralNode node) {
         Paragraph p = new Paragraph(node.getContent().toString());
+        p.properties=node.getAttributes();
         findLinks(p);
         return p;
 
