@@ -20,7 +20,7 @@ public class validatePngNameTest {
                 String s = ((Image) obj).path.getFileName().toString();
                 Matcher mat = pat.matcher(s);
                 Assertions.assertTrue(mat.find());
-                Assertions.assertTrue(mat.group().length() == s.length());
+                Assertions.assertEquals(mat.group().length(), s.length());
             }
         }
     }
