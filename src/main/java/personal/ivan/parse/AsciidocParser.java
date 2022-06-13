@@ -63,6 +63,8 @@ public class AsciidocParser implements IParse {
                             myCell.addChild(parseStructuralNode(b));
                         }
                         table.addChild(myCell);
+                    } else {
+                        table.addChild(myCell);
                     }
                 }
             }
@@ -77,6 +79,8 @@ public class AsciidocParser implements IParse {
                         for (var b : document.getBlocks()) {
                             myCell.addChild(parseStructuralNode(b));
                         }
+                        table.addChild(myCell);
+                    } else {
                         table.addChild(myCell);
                     }
                 }
