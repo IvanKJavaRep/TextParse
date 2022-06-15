@@ -11,5 +11,6 @@ public class AsciiDocConvertTest {
         ProcessDocument pd = new ProcessDocument();
         Document d = parser.parseAsciiDocument("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\crptascii.adoc");
         pd.process(d, ProcessDocument::processToJson);
+
     }
 }
