@@ -1,0 +1,4 @@
+[source]
+----
+curl -X POST "{hostname}/ServiceModel/AuthService.svc/Login"
+----
