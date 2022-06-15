@@ -4,7 +4,43 @@
     "content" : "section",
     "children" : [ {
       "content" : "table",
-      "children" : [ ],
+      "children" : [ {
+        "content" : "Дата",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Версия документа",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Изменения",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "26.11.2021",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "2.0",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Актуализированы методы «<a href=\"#_метод_авторизации_и_получения_авторизующей_cookie\">Метод авторизации и получения авторизующей cookie</a>», «<a href=\"#_метод_получения_информации_по_обращению\">Метод получения информации по обращению</a>», «<a href=\"#_метод_создания_обращения\">Метод создания обращения</a>», «<a href=\"#_метод_добавления_вложения_в_обращение\">Метод добавления вложения в обращение</a>», «<a href=\"#_метод_добавления_комментария_к_обращению\">Метод добавления комментария к обращению</a>», «<a href=\"#_метод_возврата_обращения_в_работу_или_его_закрытия\">Метод возврата обращения в работу или его закрытия</a>»;<br>\nДобавлен новый метод «<a href=\"#_метод_по_получению_информации_по_массиву_обращений_с_условием\">Метод по получению информации по массиву обращений с условием</a>»",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "08.02.2020",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "1.0",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Начальная версия",
+        "children" : [ ],
+        "properties" : { }
+      } ],
       "properties" : {
         "3" : null,
         "tablepcwidth" : 100,
@@ -21,7 +57,39 @@
     "content" : "section",
     "children" : [ {
       "content" : "table",
-      "children" : [ ],
+      "children" : [ {
+        "content" : "Термин, сокращение",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Определение",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "API BPM",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Интерфейс взаимодействия Системы обработки обращений Службы технической поддержки Оператора",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "ИНН",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Идентификационный номер налогоплательщика",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "СТП",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Служба технической поддержки",
+        "children" : [ ],
+        "properties" : { }
+      } ],
       "properties" : {
         "3" : null,
         "tablepcwidth" : 100,
@@ -225,7 +293,67 @@
         "name" : "Paragraph"
       }, {
         "content" : "table",
-        "children" : [ ],
+        "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "login",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Логин",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "password",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Пароль",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        } ],
         "properties" : {
           "3" : null,
           "tablepcwidth" : 100,
@@ -383,6 +511,202 @@
       }, {
         "content" : "table",
         "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "ok",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "boolean",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Результат выполнения запроса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "data",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "array",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Идентификатор сообщения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*createdon",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата создания сообщения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*files",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "array",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Массив файлов для решения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*id",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Идентификатор сообщения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*messages",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "array",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Текст сообщения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*modifiedon",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата изменения обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*number",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*priority",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Приоритет",
+          "children" : [ ],
+          "properties" : { }
+        }, {
           "content" : "Возможные значения:\n\n* 1 - «Обычный»;\n* 2 - «Средний»;\n* 3 - «Высокий»;\n* 4 - «Критический»",
           "children" : [ {
             "content" : "Возможные значения:",
@@ -411,6 +735,186 @@
             "properties" : { },
             "lst" : null
           } ],
+          "properties" : { }
+        }, {
+          "content" : "*satisfactioncomment",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий к оценке",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*satisfactionlevel",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Уровень удовлетворенности (от 1 до 5)",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*solution",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Решение",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*status",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Статус обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Возможные значения статусов обращения см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*statuscode",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Код статуса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*statusdate",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата последнего статуса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*subject",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тема обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*symptoms",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание проблемы, с которой обратился Участник",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "error",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание ошибки",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Появляется только при неуспешном выполнении запроса",
+          "children" : [ ],
           "properties" : { }
         } ],
         "properties" : {
@@ -507,7 +1011,87 @@
         "name" : "Paragraph"
       }, {
         "content" : "table",
-        "children" : [ ],
+        "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "ok",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "boolean",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Результат выполнения запроса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "data",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "error",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание ошибки",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Появляется только при неуспешном выполнении запроса",
+          "children" : [ ],
+          "properties" : { }
+        } ],
         "properties" : {
           "3" : null,
           "tablepcwidth" : 100,
@@ -557,7 +1141,87 @@
         "name" : "Paragraph"
       }, {
         "content" : "table",
-        "children" : [ ],
+        "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "filename",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Название файла",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "number",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "totallength",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Размер файла",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        } ],
         "properties" : {
           "3" : null,
           "tablepcwidth" : 100,
@@ -604,6 +1268,62 @@
       }, {
         "content" : "table",
         "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "ok",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "boolean",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Результат выполнения запроса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "error_message",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Сообщение об ошибке",
+          "children" : [ ],
+          "properties" : { }
+        }, {
           "content" : "Возможные значения:\n\n* «File not found» (Файл не найден);\n* «Exceeded the maximum number of request per minute» (Превышено максимальное количество запросов в минуту)",
           "children" : [ {
             "content" : "Возможные значения:",
@@ -690,7 +1410,67 @@
         "name" : "Paragraph"
       }, {
         "content" : "table",
-        "children" : [ ],
+        "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "number",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "text",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Текст сообщения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        } ],
         "properties" : {
           "3" : null,
           "tablepcwidth" : 100,
@@ -738,7 +1518,87 @@
         "name" : "Paragraph"
       }, {
         "content" : "table",
-        "children" : [ ],
+        "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "ok",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "boolean",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Результат выполнения запроса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "data",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Идентификатор сообщения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "error",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание ошибки",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Появляется только при неуспешном выполнении запроса",
+          "children" : [ ],
+          "properties" : { }
+        } ],
         "properties" : {
           "3" : null,
           "tablepcwidth" : 100,
@@ -804,6 +1664,62 @@
       }, {
         "content" : "table",
         "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "number",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "status",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Статус обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
           "content" : "Возможные значения:\n\n* «close» («Закрыто») - обращение закрыто;\n* «reopen» («Переоткрыто») - обращение переоткрыто. Доступно для обращения в статусе «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)",
           "children" : [ {
             "content" : "Возможные значения:",
@@ -824,6 +1740,86 @@
             "properties" : { },
             "lst" : null
           } ],
+          "properties" : { }
+        }, {
+          "content" : "satisfactionlevel",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Уровень удовлетворенности решением обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Доступен для статуса «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "satisfactioncomment",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий к оценке решения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Доступен для статуса «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "statuscode",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Код статуса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "statusdate",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата последнего статуса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
           "properties" : { }
         } ],
         "properties" : {
@@ -873,7 +1869,67 @@
         "name" : "Paragraph"
       }, {
         "content" : "table",
-        "children" : [ ],
+        "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "data",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "error",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание ошибки",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Появляется только при неуспешном выполнении запроса",
+          "children" : [ ],
+          "properties" : { }
+        } ],
         "properties" : {
           "3" : null,
           "tablepcwidth" : 100,
@@ -934,6 +1990,182 @@
       }, {
         "content" : "table",
         "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "numbers",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Фильтр по номерам обращений",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Массив с одним значением может указываться без квадратных скобок",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "statuscode",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Фильтр по кодам статусов",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "count",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Количество возвращаемых объектов",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "skip",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Количество игнорируемых объектов от первоначальной выборки",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "from",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Начало периода для фильтра по полю «createdon» («Дата создания сообщения»)",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "to",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Конец периода для фильтра по полю «createdon» («Дата создания сообщения»)",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "search_line",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Строка для поиска в теме и описании",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "availability_level",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Выбор обращений",
+          "children" : [ ],
+          "properties" : { }
+        }, {
           "content" : "Возможные значения:\n\n* 0 - возвращает только созданные пользователем;\n* 1 - возвращает все доступные",
           "children" : [ {
             "content" : "Возможные значения:",
@@ -954,6 +2186,22 @@
             "properties" : { },
             "lst" : null
           } ],
+          "properties" : { }
+        }, {
+          "content" : "sort",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Сортировка",
+          "children" : [ ],
           "properties" : { }
         }, {
           "content" : "Возможные значения:\n\n* statuscode - первичная сортировка по статусам;\n* modifiedon - сортировка по дате изменения",
@@ -1016,6 +2264,222 @@
       }, {
         "content" : "table",
         "children" : [ {
+          "content" : "Параметр",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тип",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Обяз.",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "ok",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "boolean",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "+",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Результат выполнения запроса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "count",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Количество возвращаемых объектов",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "data",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Идентификатор обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*createdon",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата создания обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*files",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "array",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Массив файлов для решения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*id",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Идентификатор обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*messages",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Массив данных переписки",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*modifiedon",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата изменения обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*number",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Номер обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*priority",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Приоритет",
+          "children" : [ ],
+          "properties" : { }
+        }, {
           "content" : "Возможные значения:\n\n* 1 - «Обычный»;\n* 2 - «Средний»;\n* 3 - «Высокий»;\n* 4 - «Критический»",
           "children" : [ {
             "content" : "Возможные значения:",
@@ -1045,6 +2509,186 @@
             "lst" : null
           } ],
           "properties" : { }
+        }, {
+          "content" : "*satisfactioncomment",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Комментарий к оценке",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*satisfactionlevel",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Уровень удовлетворенности (от 1 до 5)",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*solution",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Решение",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*status",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Статус обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Возможные значения статусов обращения см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*statuscode",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Код статуса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Возможные значения кодов статуса см. в «<a href=\"#_приложение_1_справочник_статусы_обращений\">Приложение 1. Справочник «Статусы обращений»</a>»",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*statusdate",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Дата последнего статуса",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*subject",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Тема обращения",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "*symptoms",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "string",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Описание проблемы, с которой обратился Участник",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "pagecount",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "integer",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "-",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "Количество обращений",
+          "children" : [ ],
+          "properties" : { }
+        }, {
+          "content" : "",
+          "children" : [ ],
+          "properties" : { }
         } ],
         "properties" : {
           "3" : null,
@@ -1064,7 +2708,63 @@
     "content" : "section",
     "children" : [ {
       "content" : "table",
-      "children" : [ ],
+      "children" : [ {
+        "content" : "Код статуса («statuscode»)",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Статус обращения («status»)",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "1",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Требует Вашего внимания",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "2",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Предоставлено решение",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "3",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "В работе",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "4",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Открыто",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "5",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Закрыто / close",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "6",
+        "children" : [ ],
+        "properties" : { }
+      }, {
+        "content" : "Переоткрыто / reopen",
+        "children" : [ ],
+        "properties" : { }
+      } ],
       "properties" : {
         "3" : null,
         "tablepcwidth" : 100,
