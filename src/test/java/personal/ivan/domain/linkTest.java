@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import personal.ivan.parse.AsciidocParser;
 
-public class linkTest {
+public class LinkTest {
     @Test
     void test() {
         AsciidocParser parser = new AsciidocParser();
