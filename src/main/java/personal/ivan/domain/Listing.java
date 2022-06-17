@@ -1,7 +1,12 @@
 package personal.ivan.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Listing extends Element {
-    public String source;
+    private String source;
 
     public Listing(String text, String code) {
         super(text);

@@ -1,7 +1,12 @@
 package personal.ivan.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Literal extends Element {
-    public String source;
+    private String source;
 
     public Literal(String text, String cont) {
         super(text);

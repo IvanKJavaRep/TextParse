@@ -23,8 +23,8 @@ public class TxtParser implements IParse {
         if (s.length() == 0 && current != "") {
             Paragraph p = new Paragraph(current);
             TxtList txtL = p.searchForList();
-            docu.elements.add(p);
-            docu.elements.add(txtL);
+            docu.getElements().add(p);
+            docu.getElements().add(txtL);
             current = "";
         } else if (s.length() != 0) {
             current += s;

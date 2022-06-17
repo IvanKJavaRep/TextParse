@@ -23,7 +23,7 @@ public class HtmlParser implements IParse{
                 String ss = p.text();
                 System.out.println(ss);
                 par = new Paragraph(ss);
-                docu.elements.add(par);
+                docu.getElements().add(par);
             }
             return docu;
         } catch (IOException e) {

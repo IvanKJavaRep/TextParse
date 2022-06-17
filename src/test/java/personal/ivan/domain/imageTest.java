@@ -12,11 +12,11 @@ public class imageTest {
     @Test
     void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("imageTest.adoc").getPath()).children
+        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("imageTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof Image) {
                 Pattern pat = Pattern.compile(GlobalConstants.pngRegexp);
-                String s = ((Image) obj).path.getFileName().toString();
+                String s = ((Image) obj).getPath().getFileName().toString();
                 Matcher mat = pat.matcher(s);
                 //нашлось ли хоть одно совпадение
                 Assertions.assertTrue(mat.find());

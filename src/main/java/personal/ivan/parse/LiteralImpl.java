@@ -6,7 +6,7 @@ import personal.ivan.domain.Literal;
 public class LiteralImpl {
     public static Literal ConvertToLiteral(StructuralNode node) {
         Literal lit = new Literal("literal", node.getContent().toString());
-        lit.properties = node.getAttributes();
+        lit.setProperties(node.getAttributes());
         return lit;
     }
 }

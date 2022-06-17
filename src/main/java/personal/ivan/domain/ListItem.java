@@ -1,7 +1,12 @@
 package personal.ivan.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class ListItem extends Element{
-    public String name = "listItem";
+    private String name = "listItem";
     public ListItem(String text) {
         super(text);
     }

@@ -8,10 +8,10 @@ public class listItemTest {
     @Test void test()
     {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("listItemTest.adoc").getPath()).children
+        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("listItemTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof ListItem) {
-                Assertions.assertEquals("направить обращение в СТП;",obj.content);
+                Assertions.assertEquals("направить обращение в СТП;",obj.getContent());
             }
         }
     }

@@ -8,10 +8,10 @@ public class tableTest {
     @Test void test()
     {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("tableTest.adoc").getPath()).children
+        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("tableTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof Table) {
-                Assertions.assertEquals(15, obj.children.size());
+                Assertions.assertEquals(15, obj.getChildren().size());
             }
         }
     }

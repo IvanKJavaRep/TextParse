@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class TableImpl {
     public static personal.ivan.domain.Table ConvertToTable(StructuralNode node) {
         personal.ivan.domain.Table table = new personal.ivan.domain.Table("table");
-        table.properties = node.getAttributes();
+        table.setProperties(node.getAttributes());
         return table;
     }
 

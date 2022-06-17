@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class ParagraphImpl {
     public static Paragraph ConvertToParagraph( StructuralNode node) {
         Paragraph p = new Paragraph(node.getContent().toString());
-        p.properties=node.getAttributes();
+        p.setProperties(node.getAttributes());
         findLinks(p);
         return p;
 
@@ -19,7 +19,7 @@ public class ParagraphImpl {
 
     public static void findLinks(Paragraph p) {
         Pattern pat = Pattern.compile(GlobalConstants.regex);
-        Matcher mat = pat.matcher(p.content);
+        Matcher mat = pat.matcher(p.getContent());
         while (mat.find()) {
             p.addChild(new Link(mat.group()));
         }

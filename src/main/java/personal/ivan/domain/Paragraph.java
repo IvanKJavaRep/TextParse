@@ -1,10 +1,15 @@
 package personal.ivan.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
 public class Paragraph extends Element {
-    public String name = "Paragraph";
+    private String name = "Paragraph";
     public Paragraph(String text) {
         super(text);
     }
@@ -14,7 +19,7 @@ public class Paragraph extends Element {
     public TxtList searchForList()
     {
         List<String> lst1= new ArrayList<>();
-        String[] arr = content.split("\\d+\\.");
+        String[] arr = getContent().split("\\d+\\.");
         for(var l :arr)
         {
             lst1.add(l);
