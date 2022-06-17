@@ -121,22 +121,25 @@
         "children" : [ {
           "content" : "направить обращение в СТП;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "получить информацию по обращению;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "внести дополнительную информацию по обращению;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "вернуть обращение в работу или закрыть его.",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         } ],
-        "properties" : { },
-        "lst" : null
+        "properties" : { }
       }, {
         "content" : "Время доступности API BPM 24 часа, 7 дней в неделю с перерывами на техническое обслуживание.",
         "children" : [ ],
@@ -176,11 +179,13 @@
         "children" : [ {
           "content" : "наименование Пользователя;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "ИНН;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "контактные данные представителей, уполномоченных осуществлять взаимодействие с СТП:",
           "children" : [ {
@@ -188,27 +193,30 @@
             "children" : [ {
               "content" : "Ф.И.О.;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "должность;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "номер телефона;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "адрес электронной почты.",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         } ],
-        "properties" : { },
-        "lst" : null
+        "properties" : { }
       } ],
       "properties" : { }
     }, {
@@ -426,30 +434,35 @@
         "children" : [ {
           "content" : "тема;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "описание;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "приоритет;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "состояние обращения;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "сообщения от специалистов СТП и ссылки на прикрепленные файлы;",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         }, {
           "content" : "решение по обращению.",
           "children" : [ ],
-          "properties" : { }
+          "properties" : { },
+          "name" : "listItem"
         } ],
-        "properties" : { },
-        "lst" : null
+        "properties" : { }
       }, {
         "content" : "<strong>URL:</strong> {hostname}/0/ssp/rest/PublicWebServices/case/{номер обращения}",
         "children" : [ ],
@@ -718,22 +731,25 @@
             "children" : [ {
               "content" : "1 - «Обычный»;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "2 - «Средний»;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "3 - «Высокий»;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "4 - «Критический»",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
           "properties" : { }
         }, {
@@ -1335,14 +1351,15 @@
             "children" : [ {
               "content" : "«File not found» (Файл не найден);",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "«Exceeded the maximum number of request per minute» (Превышено максимальное количество запросов в минуту)",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
           "properties" : { }
         } ],
@@ -1731,14 +1748,15 @@
             "children" : [ {
               "content" : "«close» («Закрыто») - обращение закрыто;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "«reopen» («Переоткрыто») - обращение переоткрыто. Доступно для обращения в статусе «Требует вашего внимания» с заполненным обязательным полем «solution» («Решение»)",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
           "properties" : { }
         }, {
@@ -2177,14 +2195,15 @@
             "children" : [ {
               "content" : "0 - возвращает только созданные пользователем;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "1 - возвращает все доступные",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
           "properties" : { }
         }, {
@@ -2215,14 +2234,15 @@
             "children" : [ {
               "content" : "statuscode - первичная сортировка по статусам;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "modifiedon - сортировка по дате изменения",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
           "properties" : { }
         } ],
@@ -2491,22 +2511,25 @@
             "children" : [ {
               "content" : "1 - «Обычный»;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "2 - «Средний»;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "3 - «Высокий»;",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             }, {
               "content" : "4 - «Критический»",
               "children" : [ ],
-              "properties" : { }
+              "properties" : { },
+              "name" : "listItem"
             } ],
-            "properties" : { },
-            "lst" : null
+            "properties" : { }
           } ],
           "properties" : { }
         }, {
