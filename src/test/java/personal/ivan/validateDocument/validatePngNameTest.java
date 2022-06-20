@@ -13,7 +13,7 @@ public class validatePngNameTest {
     @Test
     void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("smalldoc.adoc").getPath()).getChildren()
+        for (var obj : parser.parse(ClassLoader.getSystemResource("smalldoc.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof Image) {
                 Pattern pat = Pattern.compile(GlobalConstants.pngRegexp);

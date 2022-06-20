@@ -9,7 +9,7 @@ public class AsciiDocConvertTest {
     void test1() {
         AsciidocParser parser = new AsciidocParser();
         ProcessDocument pd = new ProcessDocument();
-        Document d = parser.parseAsciiDocument("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\crptascii.adoc");
+        Document d = parser.parse("C:\\Users\\i.haritonin\\MyProjects\\TextParse\\src\\test\\resources\\crptascii.adoc");
         pd.process(d, ProcessDocument::processToJson);
 
     }

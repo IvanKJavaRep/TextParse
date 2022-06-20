@@ -8,7 +8,7 @@ public class listItemTest {
     @Test void test()
     {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("listItemTest.adoc").getPath()).getChildren()
+        for (var obj : parser.parse(ClassLoader.getSystemResource("listItemTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof ListItem) {
                 Assertions.assertEquals("направить обращение в СТП;",obj.getContent());
