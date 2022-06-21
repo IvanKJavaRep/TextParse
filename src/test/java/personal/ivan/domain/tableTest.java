@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import personal.ivan.parse.AsciidocParser;
 
 public class tableTest {
-    @Test void test()
-    {
+    @Test
+    void test() {
         AsciidocParser parser = new AsciidocParser();
         for (var obj : parser.parse(ClassLoader.getSystemResource("tableTest.adoc").getPath()).getChildren()
         ) {

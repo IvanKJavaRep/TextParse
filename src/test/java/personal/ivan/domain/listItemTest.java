@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 import personal.ivan.parse.AsciidocParser;
 
 public class listItemTest {
-    @Test void test()
-    {
+    @Test
+    void test() {
         AsciidocParser parser = new AsciidocParser();
         for (var obj : parser.parse(ClassLoader.getSystemResource("listItemTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof ListItem) {
-                Assertions.assertEquals("направить обращение в СТП;",obj.getContent());
+                Assertions.assertEquals("направить обращение в СТП;", obj.getContent());
             }
         }
     }
