@@ -7,7 +7,7 @@ import personal.ivan.read.ReadFile;
 
 import java.io.FileInputStream;
 
-public class TxtParserTest {
+public class TxtParserTestType {
     @Test
     void test() {
         try {

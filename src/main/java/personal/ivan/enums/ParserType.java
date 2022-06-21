@@ -1,41 +1,22 @@
 package personal.ivan.enums;
 
-import personal.ivan.parse.AsciidocParser;
-import personal.ivan.parse.HtmlParser;
-import personal.ivan.parse.IParse;
-import personal.ivan.parse.TxtParser;
 
-import java.util.EnumMap;
+import java.util.Objects;
 
-public class ParserType {
-    EnumMap<Parser, IParse> enumMap = new EnumMap<Parser, IParse>(Parser.class);
+public enum ParserType {
+    ASCII,
+    HTML,
+    TXT;
 
-    public ParserType() {
-        enumMap.put(Parser.ascii, new AsciidocParser());
-        enumMap.put(Parser.html, new HtmlParser());
-        enumMap.put(Parser.txt, new TxtParser());
-
-    }
-
-    public IParse chooseParserObject(Parser p) {
-        return enumMap.get(p);
-    }
-
-    public enum Parser {
-        ascii,
-        html,
-        txt
-    }
-
-    public Parser chooseParserNumber(String filename) {
+    public static ParserType of(String filename) {
         var arr = filename.split("\\.");
-        if (arr[arr.length - 1] == "adoc") {
-            return Parser.ascii;
-        } else if (arr[arr.length - 1] == "html") {
-            return Parser.html;
+        if (Objects.equals(arr[arr.length - 1], "adoc")) {
+            return ParserType.ASCII;
+        } else if (Objects.equals(arr[arr.length - 1], "html")) {
+            return ParserType.HTML;
         } else {
-            return Parser.txt;
+            return ParserType.TXT;
         }
     }
-
 }
+
