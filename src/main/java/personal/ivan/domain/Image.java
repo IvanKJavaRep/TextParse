@@ -1,13 +1,11 @@
 package personal.ivan.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.nio.file.Path;
 import java.util.Map;
 
-@Getter
-@Setter
+@Data
 public class Image extends Element{
     private Map<String, Object> map;
     private Path path;

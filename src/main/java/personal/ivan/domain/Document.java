@@ -1,13 +1,12 @@
 package personal.ivan.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
+
+@Data
 public class Document extends Element {
 
     private List<Element> elements = new ArrayList<>();
@@ -20,3 +19,12 @@ public class Document extends Element {
 
     }
 }
+
+
+
+
+
+
+
+
+

@@ -2,11 +2,17 @@ package personal.ivan.domain;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+@NoArgsConstructor
+@Data
+@AllArgsConstructor
 public abstract class Element {
     private String content;
     private List<Element> children = new ArrayList<>();
