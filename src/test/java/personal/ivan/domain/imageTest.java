@@ -12,7 +12,7 @@ public class imageTest {
     @Test
     void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("imageTest.adoc").getPath()).getChildren()
+        for (var obj : parser.parse(ClassLoader.getSystemResource("imageTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof Image) {
                 Pattern pat = Pattern.compile(GlobalConstants.pngRegexp);

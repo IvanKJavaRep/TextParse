@@ -8,7 +8,7 @@ public class listringTest {
     @Test
     void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("listingTest.adoc").getPath()).getChildren()
+        for (var obj : parser.parse(ClassLoader.getSystemResource("listingTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof Listing) {
                 Assertions.assertEquals("source", obj.getProperties().get("1"));

@@ -5,8 +5,8 @@ import personal.ivan.domain.Document;
 import personal.ivan.process.ProcessDocument;
 
 public class HtmlParseTest {
-    @Test void test()
-    {
+    @Test
+    void test() {
         // объект для пасинга (для html нет чтения)
         HtmlParser parser = new HtmlParser();
         // объект для процессинга

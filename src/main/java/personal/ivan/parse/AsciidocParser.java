@@ -22,7 +22,8 @@ public class AsciidocParser implements IParse {
         return d;
     }
 
-    public Document parseAsciiDocument(String file) {
+    @Override
+    public Document parse(String file) {
         AsciidocReadFile reader = new AsciidocReadFile();
         org.asciidoctor.ast.Document asciiDoc = reader.readDocument(file);
         Document resultDoc = new Document(asciiDoc.getNodeName());
@@ -142,10 +143,10 @@ public class AsciidocParser implements IParse {
         }
     }*/
 
-    @Override
+    /*@Override
     public Document parse(String filename) {
         return null;
-    }
+    }*/
 
     @Override
     public void parseByString(String s) {

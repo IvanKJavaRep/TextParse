@@ -8,15 +8,12 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.function.Function;
 
-public class ProcessDocument implements IProcess{
+public class ProcessDocument implements IProcess {
     @Override
-    public void process(Document d, Function<Document,String> method) {
-        try(PrintWriter pw = new PrintWriter("output.txt"))
-        {
+    public void process(Document d, Function<Document, String> method) {
+        try (PrintWriter pw = new PrintWriter("output.txt")) {
             pw.print("");
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
         }
         try (FileWriter fw = new FileWriter("output.txt", true)) {
             String jsonresult = method.apply(d);
@@ -25,13 +22,10 @@ public class ProcessDocument implements IProcess{
 
         }
     }
-    public static String processToJson(Document d){
+
+    public static String processToJson(Document d) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            /*if(d.elements.get(1) instanceof Paragraph)
-            {
-                System.out.println("###########");
-            }*/
             String jsonresult = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(d);
             return jsonresult;
         } catch (JsonProcessingException e) {

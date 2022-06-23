@@ -8,7 +8,7 @@ public class txtListTest1 {
     @Test
     void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("txtListTest.adoc").getPath()).getChildren()
+        for (var obj : parser.parse(ClassLoader.getSystemResource("txtListTest.adoc").getPath()).getChildren()
         ) {
             Assertions.assertEquals(3, obj.getChildren().size());
         }

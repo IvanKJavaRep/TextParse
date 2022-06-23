@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import personal.ivan.parse.AsciidocParser;
 
 public class tableTest {
-    @Test void test()
-    {
+    @Test
+    void test() {
         AsciidocParser parser = new AsciidocParser();
-        for (var obj : parser.parseAsciiDocument(ClassLoader.getSystemResource("tableTest.adoc").getPath()).getChildren()
+        for (var obj : parser.parse(ClassLoader.getSystemResource("tableTest.adoc").getPath()).getChildren()
         ) {
             if (obj instanceof Table) {
                 Assertions.assertEquals(15, obj.getChildren().size());
