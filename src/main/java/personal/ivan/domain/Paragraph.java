@@ -2,15 +2,17 @@ package personal.ivan.domain;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@Builder
+@ToString(callSuper = true)
 public class Paragraph extends Element {
     private String name = "Paragraph";
 
+    @Builder
     public Paragraph(String text) {
         super(text);
     }

@@ -14,6 +14,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public abstract class Element {
+
     private String content;
     private List<Element> children = new ArrayList<>();
     private java.util.Map<String, Object> properties = new HashMap<>();
