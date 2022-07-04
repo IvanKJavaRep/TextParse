@@ -40,5 +40,9 @@ public class ParserTypeTest {
         } else if (parse instanceof TxtParser) {
             Assertions.assertEquals("text parse test\n", document.getElements().get(0).getContent());
         }
+        else
+        {
+            Assertions.fail();
+        }
     }
 }
