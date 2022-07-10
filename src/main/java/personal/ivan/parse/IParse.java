@@ -5,7 +5,7 @@ import personal.ivan.domain.Document;
 import java.io.FileInputStream;
 
 public interface IParse {
-    public Document parse(String filename);
+    Document parse(String filename);
     void parseByString(String s);
     Document parse(FileInputStream fstream);
 }

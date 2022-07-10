@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Link extends Element{
+public class Link extends Element {
     private String name="link";
     public Link(String text) {
         super(text);
