@@ -10,7 +10,7 @@ public class validatePngAlignmentTest {
     @Test
     void test() {
         String filename = ClassLoader.getSystemResource("smalldoc.adoc").getPath();
-        ParserHolder parserType = new ParserHolder();
+        ParserHolder parserType = ParserHolder.getInstance();
         IParse parserObject = parserType.chooseParserObject(filename);
         for (var obj : parserObject.parse(filename).getChildren()) {
             for (var el : obj.getChildren()) {
