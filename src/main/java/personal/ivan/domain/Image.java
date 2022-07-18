@@ -11,7 +11,7 @@ import java.util.Map;
 @Getter
 @Setter
 @ToString(callSuper = true)
-public class Image extends Element {
+public class Image extends Element implements ICLonableDomain {
     private Map<String, Object> map;
     private Path path;
 
@@ -32,10 +32,13 @@ public class Image extends Element {
 
     }
 
+    @Override
+    public Element copy() {
+        Image im = new Image(this.getContent(), this.path, this.map);
+        return im;
+    }
+
     public Memento GetMemento() {
         return new Memento(this.path, this.map);
     }
-
-
 }
-
