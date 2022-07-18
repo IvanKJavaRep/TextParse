@@ -6,6 +6,7 @@ import personal.ivan.domain.TxtList;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 
 public class TxtParser implements IParse {
@@ -15,7 +16,12 @@ public class TxtParser implements IParse {
 
     @Override
     public Document parse(String filename) {
-        return docu;
+        try {
+            return parse(new FileInputStream(filename));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
@@ -42,9 +48,7 @@ public class TxtParser implements IParse {
             }
             this.parseByString("");
             return docu;
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
 
         }
         return null;

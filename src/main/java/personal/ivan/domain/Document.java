@@ -1,16 +1,21 @@
 package personal.ivan.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
+
+@Data
+@ToString(callSuper = true)
+@SuperBuilder
 public class Document extends Element {
 
     private List<Element> elements = new ArrayList<>();
+
+
     public Document(String text) {
         super(text);
     }
@@ -20,3 +25,12 @@ public class Document extends Element {
 
     }
 }
+
+
+
+
+
+
+
+
+

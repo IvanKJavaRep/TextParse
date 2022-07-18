@@ -2,12 +2,18 @@ package personal.ivan.domain;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
+import lombok.Data;
+import lombok.experimental.SuperBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+
+@Data
+@SuperBuilder
 public abstract class Element {
+
     private String content;
     private List<Element> children = new ArrayList<>();
     private java.util.Map<String, Object> properties = new HashMap<>();

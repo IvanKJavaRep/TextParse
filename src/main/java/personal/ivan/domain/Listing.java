@@ -1,10 +1,8 @@
 package personal.ivan.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class Listing extends Element {
     private String source;
 

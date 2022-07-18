@@ -1,14 +1,13 @@
 package personal.ivan.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.ArrayList;
 
-@Getter
-@Setter
+@Data
 public class Table extends Element {
     private ArrayList<ArrayList<String>> listOfRows = new ArrayList<>();
+
     public Table(String text) {
         super(text);
     }

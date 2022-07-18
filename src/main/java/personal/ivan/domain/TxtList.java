@@ -1,8 +1,10 @@
 package personal.ivan.domain;
 
-public class TxtList extends Element{
-    public TxtList(String content)
-    {
+import lombok.Data;
+
+@Data
+public class TxtList extends Element {
+    public TxtList(String content) {
         super(content);
     }
 

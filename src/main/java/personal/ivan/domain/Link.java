@@ -1,12 +1,15 @@
 package personal.ivan.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Builder;
+import lombok.Data;
+import lombok.ToString;
 
-@Getter
-@Setter
-public class Link extends Element{
-    private String name="link";
+@Data
+@ToString(callSuper = true)
+public class Link extends Element {
+    private String name = "link";
+
+    @Builder
     public Link(String text) {
         super(text);
     }
