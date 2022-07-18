@@ -12,6 +12,7 @@ public class Memento {
         path = p;
     }
 
+
     public Path getPath() {
         return path;
     }

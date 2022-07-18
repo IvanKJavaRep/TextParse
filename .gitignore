@@ -1,8 +1,31 @@
+/.gradle/
 /build/
-.gradle/7.1.1/executionHistory/executionHistory.bin
-.gradle/7.1.1/executionHistory/executionHistory.lock
-.gradle/7.1.1/fileHashes/resourceHashesCache.bin
-.gradle/7.1.1/fileHashes/fileHashes.lock
-.gradle/7.1.1/fileHashes/fileHashes.bin
-.gradle/7.1.1/fileChanges/last-build.bin
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+.deploy/RELEASE_VERSION
 
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Gitlab CI
+.deploy/RELEASE_VERSION
+out/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
