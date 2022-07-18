@@ -18,7 +18,7 @@ public class ParserTypeTest {
     )
     void test(String arg) {
         String filename = ClassLoader.getSystemResource(arg).getPath();
-        ParserHolder parserHolder = new ParserHolder();
+        ParserHolder parserHolder = ParserHolder.getInstance();
         IParse parse = parserHolder.chooseParserObject(ClassLoader.getSystemResource(arg).getPath());
         Document document = parse.parse(filename);
         if (parse instanceof AsciidocParser) {
