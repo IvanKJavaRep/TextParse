@@ -31,7 +31,7 @@ public class ParserTypeTest {
                     //нашлось ли хоть одно совпадение
                     Assertions.assertTrue(mat.find());
                     //совпадение равно длине всей строки или нет
-                    Assertions.assertTrue(mat.group().length() == s.length());
+                    Assertions.assertEquals(mat.group().length(), s.length());
                 }
             }
         } else if (parse instanceof HtmlParser) {
