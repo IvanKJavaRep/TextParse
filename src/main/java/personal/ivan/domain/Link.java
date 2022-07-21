@@ -6,7 +6,7 @@ import lombok.ToString;
 
 @Data
 @ToString(callSuper = true)
-public class Link extends Element {
+public class Link extends Element implements IVisitable {
     private String name = "link";
 
     @Builder
@@ -17,5 +17,10 @@ public class Link extends Element {
     @Override
     public void printContent() {
 
+    }
+
+    @Override
+    public String accept(Visitor visitor) {
+        return visitor.visit(this);
     }
 }

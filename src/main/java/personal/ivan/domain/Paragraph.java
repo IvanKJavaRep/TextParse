@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @ToString(callSuper = true)
-public class Paragraph extends Element {
+public class Paragraph extends Element implements IVisitable {
     private String name = "Paragraph";
 
     @Builder
@@ -30,5 +30,10 @@ public class Paragraph extends Element {
         lst1.remove(0);
         TxtList lst = new TxtList("List");
         return lst;
+    }
+
+    @Override
+    public String accept(Visitor visitor) {
+        return visitor.visit(this);
     }
 }

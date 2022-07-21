@@ -3,6 +3,7 @@ package personal.ivan.domain;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @Data
 @SuperBuilder
+@NoArgsConstructor
 public abstract class Element {
 
     private String content;
