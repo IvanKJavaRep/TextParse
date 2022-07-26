@@ -22,9 +22,22 @@ public class Document extends Element {
 
     @Override
     public void printContent() {
-
+        
     }
+    
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
 
 
 
