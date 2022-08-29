@@ -66,6 +66,7 @@ public class DTOpattern {
                 o.relatedObjects.add(new DTO_for_testbase_table3(r.getInt("id"),
                         r.getString("name"), r.getString("address")));
             }
+            lst = SelectFromTable.select(connection);
             System.out.println("Выводим объекты одной таблицы и сразу же зависящие от них объекты");
             for (var obj1 : lst
             ) {

@@ -14,7 +14,7 @@ public class UpdateTable {
                 + "WHERE id3 = ?";
         for (var obj : lst
         ) {
-            obj.address = "updated address";
+            obj.address = "updated address2";
         }
         PreparedStatement pstmt = null;
         try {
