@@ -1,15 +1,17 @@
 package personal.ivan.domain;
 
 import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Memento {
-    private Map<String, Object> map;
+    private Map<String, Object> map = new HashMap<>();
     private Path path;
 
     public Memento(Path p, Map<String, Object> m) {
-        map = m;
         path = p;
+        map.putAll(m);
+        //map=m;
     }
 
 
