@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.List;
 
 public class UpdateTable {
-    public static void update(Connection connection, List<DTO_for_testbase_table3> lst) {
+    public static void update(Connection connection, List<DTOForTestbaseTable3> lst) {
         Statement statement = null;
         String command = "UPDATE table3 "
                 + "SET address = ? "

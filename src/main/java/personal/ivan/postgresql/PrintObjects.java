@@ -3,7 +3,7 @@ package personal.ivan.postgresql;
 import java.util.List;
 
 public class PrintObjects {
-    public static void printObjects(List<DTO_for_testbase_table3> lst) {
+    public static void printObjects(List<DTOForTestbaseTable3> lst) {
         System.out.println("Выводим объекты одной таблицы и сразу же зависящие от них объекты");
         for (var obj1 : lst
         ) {

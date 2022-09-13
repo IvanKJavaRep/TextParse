@@ -13,7 +13,7 @@ public class DTOpattern {
         ResultSetMetaData resMeta = null;
         ResultSet foreignKeys = null;
         ResultSet crossRef = null;
-        List<DTO_for_testbase_table3> lst = new ArrayList<>();
+        List<DTOForTestbaseTable3> lst = new ArrayList<>();
         try {
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testbase", "ivan", "ivan");
             statement = connection.createStatement();
@@ -49,7 +49,7 @@ public class DTOpattern {
                 System.out.println(res.getString("address"));
                 System.out.println();
                 //создаем DTO объекты
-                DTO_for_testbase_table3 obj = new DTO_for_testbase_table3(res.getInt("id3"),
+                DTOForTestbaseTable3 obj = new DTOForTestbaseTable3(res.getInt("id3"),
                         res.getString("name"),
                         res.getString("address"));
                 //добавляем их в список
@@ -63,7 +63,7 @@ public class DTOpattern {
                 statement = connection.createStatement();
                 ResultSet r = statement.executeQuery(command);
                 r.next();
-                o.relatedObjects.add(new DTO_for_testbase_table3(r.getInt("id"),
+                o.relatedObjects.add(new DTOForTestbaseTable3(r.getInt("id"),
                         r.getString("name"), r.getString("address")));
             }
             lst = SelectFromTable.select(connection);

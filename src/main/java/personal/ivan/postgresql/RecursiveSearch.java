@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class RecursiveSearch {
     //пытался создать рекурсию для набора из n таблиц с n foreign keys, но пока трудно
-    public static void recursiveSearch(DTO_for_testbase_table3 obj, String tableName, Connection connection) {
+    public static void recursiveSearch(DTOForTestbaseTable3 obj, String tableName, Connection connection) {
 
         DatabaseMetaData meta = null;
         try {

@@ -8,14 +8,14 @@ import java.util.List;
 
 @Data
 @AllArgsConstructor
-public class DTO_for_testbase_table3 {
+public class DTOForTestbaseTable3 {
     int id;
     String name;
     String address;
     String somethingNew;
-    List<DTO_for_testbase_table3> relatedObjects = new ArrayList<>();
+    List<DTOForTestbaseTable3> relatedObjects = new ArrayList<>();
 
-    public DTO_for_testbase_table3(int id, String name, String address) {
+    public DTOForTestbaseTable3(int id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;

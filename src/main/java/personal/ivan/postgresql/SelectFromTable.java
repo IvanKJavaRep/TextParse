@@ -8,16 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SelectFromTable {
-    public static List<DTO_for_testbase_table3> select(Connection connection) {
+    public static List<DTOForTestbaseTable3> select(Connection connection) {
         Statement statement;
-        List<DTO_for_testbase_table3> lst = new ArrayList<>();
+        List<DTOForTestbaseTable3> lst = new ArrayList<>();
         try {
             statement = connection.createStatement();
             String command = "SELECT * FROM table3 ";
             ResultSet res = statement.executeQuery(command);
             while (res.next()) {
                 //создаем DTO объекты
-                DTO_for_testbase_table3 obj = new DTO_for_testbase_table3(res.getInt("id3"),
+                DTOForTestbaseTable3 obj = new DTOForTestbaseTable3(res.getInt("id3"),
                         res.getString("name"),
                         res.getString("address"));
                 //добавляем их в список
@@ -31,7 +31,7 @@ public class SelectFromTable {
                 statement = connection.createStatement();
                 ResultSet r = statement.executeQuery(command);
                 r.next();
-                o.relatedObjects.add(new DTO_for_testbase_table3(r.getInt("id"),
+                o.relatedObjects.add(new DTOForTestbaseTable3(r.getInt("id"),
                         r.getString("name"), r.getString("address")));
             }
         } catch (SQLException e) {
