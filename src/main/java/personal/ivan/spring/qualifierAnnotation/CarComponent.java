@@ -2,7 +2,7 @@ package personal.ivan.spring.qualifierAnnotation;
 
 import org.springframework.stereotype.Component;
 
-@Component("car")
+@Component()
 public class CarComponent implements IVehicle {
     @Override
     public String getSpeed() {
