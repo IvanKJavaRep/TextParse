@@ -2,7 +2,7 @@ package personal.ivan.spring;
 
 import org.junit.jupiter.api.Test;
 
-public class aspectAroundPointCutAnnotationsTest {
+public class AspectAroundPointCutAnnotationsTest {
     @Test
     void test()
     {

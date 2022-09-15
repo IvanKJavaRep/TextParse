@@ -12,7 +12,7 @@ public class documentBuilderTest {
     void test(String arg) {
         //Document doc = Document.builder().text(arg).build();
         Document doc = Document.builder().content(arg).build();
-        Assertions.assertEquals(String.format("Document(super=Element(content=%s, children=null, properties=null), elements=null)", arg), doc.toString());
+        Assertions.assertEquals(String.format("Document(super=Element(content=%s, children=null, properties=null), chain=null, elements=null)", arg), doc.toString());
 
 
     }

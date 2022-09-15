@@ -21,7 +21,7 @@ public class mementoTest {
         Memento imageMemento = new Memento(im.getPath(),im.getMap());
         //изменили значение мапа и проверили, что не поменялось
         im.getMap().put("str", 1);
-        Assertions.assertNotEquals(im.getPath(),imageMemento.getPath());
+        Assertions.assertEquals(im.getPath(),imageMemento.getPath());
         Assertions.assertNotEquals(im.getMap().size(),imageMemento.getMap().size());
     }
 }
