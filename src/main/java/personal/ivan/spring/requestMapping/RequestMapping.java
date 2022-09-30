@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -64,6 +65,20 @@ public class RequestMapping {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body("Link name is: " + link.getName());
+    }
+
+    //the return object will be transfromed to Json because @RestController
+    // includes Controller + ResponseBody annotations
+    @PostMapping(value = "/response",
+            produces = {MediaType.APPLICATION_JSON_VALUE})
+    public Car postResponseController() {
+        return new Car();
+    }
+
+    //set Accept param to application/json in Postman
+    @PostMapping(value = "/response", produces = {MediaType.APPLICATION_XML_VALUE})
+    public String postResponseController2() {
+        return new Car().toString();
     }
 
     public static void main(String[] args) {

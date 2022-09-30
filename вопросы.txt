@@ -6,3 +6,15 @@
 
 3. Что такое CORS и аннотация @CrossOrigin? Правильно ли я понял, что это возможность запроса ресурсов
 с другого сайта из текущей фнкции, адрес которого мы указываем в парамтетрах CrossOrigin.
+
+4. @PostMapping(value = "/response", produces = MediaType.APPLICATION_XML_VALUE)
+    public String postResponseController() {
+        return "XML value";
+    }
+    @PostMapping(value = "/response", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Car postResponseController2() {
+        return new Car();
+    }
+Если в XML тоже подставить Car(), то сказано No converter for [class personal.ivan.spring.repository.Car] with preset Content-Type 'null'
+
+Значит, что у этого объекта нет автоматической сериализации в формат XML?
