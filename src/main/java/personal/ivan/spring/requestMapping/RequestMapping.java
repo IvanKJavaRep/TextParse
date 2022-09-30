@@ -3,8 +3,11 @@ package personal.ivan.spring.requestMapping;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import personal.ivan.domain.Link;
 import personal.ivan.spring.repository.Car;
 
 @RestController
@@ -51,6 +54,16 @@ public class RequestMapping {
         } else {
             System.out.println("Requested param " + id);
         }
+    }
+
+    // url to test: Post http://localhost:8080/attribute
+    @CrossOrigin(origins = "https://google.com")
+    @PostMapping("/attribute")
+    ResponseEntity<String> assembleVehicle(@ModelAttribute(name = "link") Link link) {
+        System.out.println(link.getName());
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body("Link name is: " + link.getName());
     }
 
     public static void main(String[] args) {
