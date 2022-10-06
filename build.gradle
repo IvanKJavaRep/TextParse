@@ -40,6 +40,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
     testImplementation group: 'org.springframework', name: 'spring-test', version: '4.3.0.RELEASE'
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 }
 
 
