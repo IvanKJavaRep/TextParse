@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import personal.ivan.spring.value.ValueAnnotation;
 
-
 public class ValueAnnotationTest {
     @Test
     void test() {
